@@ -1,0 +1,140 @@
+.Kr {
+    width: 100%;
+    height: 442px;
+    background-image: url(https://static.wanted.co.kr/images/userweb/resume_intro/intro_img_web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Kr_content {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: white;
+    padding-top: 80px;
+}
+.Kr_content h2 {
+    font-size: 24px; /* 원하는 폰트 크기로 조정 */
+}
+.center-text {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-white {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-white:hover {
+    background-color: #e5e5e5;
+    color: #007bff;
+}
+.Kr_kim h1 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+/* 여기서 기존의 다른 스타일들이 있을 수 있습니다 */
+
+/* h2 요소의 스타일 추가 */
+.Kr_content h2 {
+    font-size: 24px; /* 원하는 폰트 크기로 조정 */
+}
+
+/* 가운데 정렬 스타일 추가 */
+.center-text {
+    text-align: center;
+}
+
+/* 오른쪽 배치 스타일 추가 */
+.right-align {
+    
+    margin-right: 5px;
+}
+
+/* 메모지 스타일 추가 */
+.note {
+    position: relative;
+    padding: 10px;
+    background-color: white; /* 하얀색 배경 */
+    border: 1px solid #dcdcdc; /* 연한 회색 테두리 */
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+    border-radius: 4px; /* 둥근 테두리 */
+    display: inline-flex;
+    text-align: right;
+    color: green;
+}
+
+/* 메모지 화살표 스타일 추가 */
+.note::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white; /* 메모지의 하얀색 배경과 일치 */
+}
+.center-text {
+    text-align: center;
+}
+
+.Kr_kim ul {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; /* 리스트의 최대 너비 설정 */
+}
+
+.Kr_kim ul li {
+    list-style: none; /* 기본 리스트 마커 제거 */
+    padding: 5px 0; /* 각 항목 간격 설정 */
+}
+
+.Kr_kim ul li div {
+    border-left: 2px solid #333; /* 왼쪽에 수직 라인 추가 */
+    padding-left: 10px; /* 텍스트 내용과 수직 라인 사이 여백 설정 */
+}
+
+
+
+.Kr_kim p {
+    color: rgba(128, 128, 128, 0.7); /* 회색과 70%의 투명도 */
+}
+.white-card {
+    background-color: #fff; /* 흰색 배경색 지정 */
+    padding: 20px; /* 내용과 테두리 간 여백 설정 */
+    border: 1px solid #ddd; /* 테두리 스타일 설정 */
+    border-radius: 10px; /* 테두리 둥글게 만들기 */
+    box-shadow: 2px 2px 5px #888; /* 그림자 추가 */
+    max-width: 400px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
