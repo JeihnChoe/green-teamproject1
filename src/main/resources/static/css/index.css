@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.advertisement {
+    justify-content: center;
+    position: center;
+    margin-bottom: 20px;
+}
+
+.category-box {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.category-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgb(214, 214, 214);
+}
+
+.category-img {
+    width: 100px;
+    border-radius: 6px;
+}
+
+.category-name {
+    display: grid;
+    justify-content: center;
+}
+
+.my-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.my-menu-card {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.my-menu-name {
+    display: flex;
+    justify-content: center;
+    /* 가로 가운데 정렬 */
+    align-items: center;
+    /* 세로 가운데 정렬 */
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 50px;
+    box-shadow: 0 0 3px 0 rgb(214, 214, 214);
+    width: 400px;
+    height: 50px;
+}
+
+.hot-position-title {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.hot-position-box {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+
+.hot-position-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgb(214, 214, 214);
+    width: 500px;
+}
+
+.hot-position-card-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-width: 1px;
+}
+
+.hot-position-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.hot-position-company {
+    font-size: 14px;
+    margin: 4px;
+}
+
+.hot-position-location {
+    font-size: 12px;
+    color: gray;
+    margin: 4px;
+}
+
+.hot-position-compensation {
+    font-size: 14px;
+    margin: 4px;
+}
