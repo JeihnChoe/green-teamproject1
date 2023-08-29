@@ -1,0 +1,62 @@
+{{ >layout/head}}
+<link rel="stylesheet" href="/css/bizBoard/manageNotice.css">
+{{ >layout/header}}
+
+<div class="main">
+    <div class="left-container">
+        <div class="bizInfo">
+            <div class="bizName">
+                <img class="bizName-img" src="/images/basic.jpg"></img>
+                <div class="bizName-name">회사이름</div>
+            </div>
+            <hr class="hr-info">
+            <div class="managerName">개인이름</div>
+        </div>
+
+        <button class="notice-save">+ 채용공고 등록</button>
+        <hr class="hr-notice">
+        <div class="hiring-notice">채용 중인 공고</div>
+        <hr class="hr-notice">
+        <button class="notice-list">채용공고리스트1</button>
+        <button class="notice-list">채용공고리스트2</button>
+
+    </div>
+
+
+
+    <div class="right-container">
+        <h4 class="manageNotice-main"> 채용공고 관리</h4>
+        <div class="notice-buttons">
+            <button class="notice-button all">공고 전체</button>
+            <button class="notice-button hiring">채용중</button>
+            <button class="notice-button end">채용종료</button>
+        </div>
+
+        <table class="table">
+            <thead class="table-success">
+                <tr>
+                    <th>공고이름</th>
+                    <th>직군</th>
+                    <th>마감일</th>
+                    <th>채용상태(합격/불합격)</th>
+                    <th>공고수정/삭제</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="notice-item" onclick="alert('첫 번째 행 버튼 클릭')">
+
+                    <td>[디자인플랫폼팀](제목)</td>
+                    <td>디자인(부서)</td>
+                    <td>2023.03.28(마감일)</td>
+                    <td>채용상태(채용중/채용종료)</td>
+                    <td>공고수정/삭제</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{{ >layout/footer}}
