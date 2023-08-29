@@ -37,4 +37,9 @@ public class userController {
     }
 
 
+    @GetMapping("/bizRegistration")
+    public String Registration(){
+        return "/bizBoard/bizRegistration";
+    }
+
 }
