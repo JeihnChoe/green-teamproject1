@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class userController {
-    
+
     @GetMapping("/resume")
-    
-    public String resume(){
+
+    public String resume() {
         return "/userBoard/resume";
     }
+
 
 
    @GetMapping("/bizDetail")
@@ -19,4 +20,15 @@ public class userController {
         return "/bizBoard/bizDetail";
     }
     
+
+    @GetMapping("/loginForm")
+    public String login() {
+        return "/userBoard/loginForm";
+    }
+
+    @GetMapping("/joinForm")
+    public String join() {
+        return "/userBoard/joinForm";
+    }
+
 }
