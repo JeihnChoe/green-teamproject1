@@ -1,0 +1,366 @@
+{{>layout/head}}
+<link rel="stylesheet" href="/css/userBoard/manage1.css">
+<link rel="stylesheet" href="/css/userBoard/manage2.css">
+{{>layout/header}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/manage1.css">
+    <link rel="stylesheet" type="text/css" href="css/manage2.css">
+</head>
+
+<body>
+    <div id="__next" data-reactroot="">
+        <div role="presentation" class="NavBar_className__y2qGg" style="position:fixed">
+            <div class="MainBar_MainBar__40DX7 isLoggedIn" role="presentation">
+                <nav class="MainBar_MainBar_nav__kwHBF">
+                    <div class="MainBar_MainBar_nav_top__wXy52">
+                        <div class="MainBar_MainBar_nav_top_logo__Y_Q5D">
+                            <button type="button" aria-label="job category menu button" data-attribute-id="gnb"
+                                data-gnb-kind="jobCategoryMenu" class="MainBar_hamberger__yQfei"><img
+                                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=17&amp;q=75"
+                                    alt="hamberger menu" height="14" style="width:17px;height:14px;object-fit:contain">
+                            </button>
+                            <a href="/jobsfeed" class="MainBar_MainBar_logo__bGymr" aria-label="jobsfeed link"
+                                data-attribute-id="gnb" data-gnb-kind="jobsfeed">
+                                <svg width="74" height="21" viewBox="0 0 140 32">
+                                    <path fill="currentColor"
+                                        d="M89.8 2.2l-5.6 2.4v4.8h-3.8v5.2h3.8v10.2c0 4.2 2.6 7 6.6 7 1.6 0 2.6-.4 3.2-.6V26c-.2 0-1 .2-1.8.2-1.6 0-2.4-.6-2.4-2.6v-8.8H94V9.6h-4.2V2.2zM28.6 9.6l-4 14-4.6-14h-5.6l-4.6 14L6 9.6H0l6.8 21.8h6l4.4-14.6 4.6 14.6h6l6.8-21.8zM134.4 2.2v8.6c-1.4-1-3-1.6-4.8-1.8h-.4-1.6c-5 .4-8.2 4.2-9.2 9-.2.8-.2 1.4-.2 2.2V22c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.4V0l-5.4 2.2zm-5.2 24.4c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM116.2 18c-.8-5.2-4.6-9-10-9s-9.2 3.8-10 9c-.2.8-.2 1.6-.2 2.6v1.6c.6 5.6 4.4 10 10.2 10 4.6 0 8-2.8 9.4-6.8l-5-1.2c-.8 1.8-2.4 3.2-4.4 3.2-2.8 0-4.6-2.2-5-5.2h15.2v-1.6c0-1 0-1.8-.2-2.6zm-14.8 0c.8-2.2 2.4-3.6 4.8-3.6s4 1.6 4.8 3.6h-9.6zM50.6 11c-1.4-1-3.2-1.8-5.2-1.8H44.8h-.6c-5.2.4-8.6 4-9.4 9-.2.8-.2 1.4-.2 2.2v1.8c.6 5.6 4.4 10 10.2 10 2.4 0 4.4-.6 6-1.8v1.4h5.6V9.6h-5.6V11zm-5.2 15.6c-3 0-5.6-2.4-5.6-6.2 0-4 2.6-6.2 5.6-6.2s5.2 2.2 5.2 6c0 4.2-2.2 6.4-5.2 6.4zM71.2 9c-2.2 0-4.6 1-6 3.2V9.6h-5.6v21.8h5.6V18.8c0-2.6 1.4-4.6 4-4.6 2.8 0 3.8 2 3.8 4.4v12.8h5.6V17.6c.2-4.8-2.2-8.6-7.4-8.6z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <button id="gnbSignupBtn" class="xsSignUpButton isLoggedIn" type="button"
+                            data-attribute-id="gnb" data-gnb-kind="signupLogin">회원가입하기
+                        </button>
+                    </div>
+                    <ul class="Menu_className__gGcYQ">
+                        <li class="" data-attribute-id="gnb" data-gnb-kind="jobs"><a href="/wdlist" class="">채용</a></li>
+                        <li class="" data-attribute-id="gnb" data-gnb-kind="event"><a href="/events" class="">이벤트</a>
+                        </li>
+                        <li class="smMoreVisible selectedNav" data-attribute-id="gnb" data-gnb-kind="resume"><a
+                                href="/cv/list" class="">이력서</a></li>
+                        <li class="smMoreVisible" data-attribute-id="gnb" data-gnb-kind="community"><a
+                                href="/community">소셜</a></li>
+                        <li class="smMoreVisible" data-attribute-id="gnb" data-gnb-kind="freelancer"><a
+                                href="https://www.wanted.co.kr/gigs/experts" class="" target="_blank"
+                                rel="noopener noreferrer">프리랜서</a></li>
+                        <li class="smMoreVisible" data-attribute-id="gnb" data-gnb-kind="aiScore"><a
+                                href="/aiscore/resume" class="">AI 합격예측</a>
+                        </li>
+                    </ul>
+                    <aside class="Aside_className___e5Bi isLoggedIn">
+                        <ul>
+                            <li>
+                                <button type="button" class="searchButton" aria-label="검색" aria-haspopup="dialog"
+                                    aria-expanded="false" aria-controls="nav_searchbar" data-attribute-id="gnb"
+                                    data-gnb-kind="search">
+                                    <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
+                                        width="18" height="18" viewBox="0 0 18 18">
+                                        <defs>
+                                            <path id="qt2dnsql4a"
+                                                d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z">
+                                            </path>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3"
+                                                xlink:href="#qt2dnsql4a"></use>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="Aside_hasNewNotificationAlarm__OwKDI">
+                                <button type="button" class="notiButton" aria-label="Notification Center"
+                                    aria-haspopup="true" aria-expanded="false" data-attribute-id="gnb"
+                                    data-gnb-kind="bell">
+                                    <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
+                                        width="18" height="18" viewBox="0 0 18 18">
+                                        <defs>
+                                            <path id="bpnpn3yn0a"
+                                                d="M7.554 14.813h3.183a1.689 1.689 0 01-3.183 0zm1.592 2.25a2.813 2.813 0 002.812-2.813.563.563 0 00-.562-.563h-7.5c-.31 0-.541-.014-.699-.04.018-.036.04-.077.066-.123.036-.065.354-.605.46-.8.477-.875.735-1.676.735-2.599V6.75c0-2.656 2.057-4.688 4.688-4.688 2.63 0 4.687 2.032 4.687 4.688v3.375c0 .923.258 1.724.736 2.6.106.194.424.734.46.799.026.046.047.087.065.123-.157.026-.389.04-.698.04a.564.564 0 000 1.126c1.263 0 1.896-.221 1.896-1.002 0-.26-.092-.494-.28-.833-.045-.083-.361-.619-.456-.792-.395-.724-.598-1.355-.598-2.061V6.75c0-3.28-2.563-5.813-5.812-5.813S3.333 3.47 3.333 6.75v3.375c0 .706-.203 1.337-.598 2.06-.094.174-.41.71-.456.793-.188.339-.279.572-.279.833 0 .78.632 1.002 1.896 1.002H6.39a2.813 2.813 0 002.756 2.25z">
+                                            </path>
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-1079 -16) translate(224 7) translate(855 9)">
+                                                <mask id="1dencd96ob" fill="#fff">
+                                                    <use xlink:href="#bpnpn3yn0a"></use>
+                                                </mask>
+                                                <use fill-rule="nonzero" stroke="currentColor" stroke-width=".3"
+                                                    xlink:href="#bpnpn3yn0a"></use>
+                                                <g fill="currentColor" mask="url(#1dencd96ob)">
+                                                    <path d="M0 0H18V18H0z"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <span class="Badge_Badge__BJTzL"
+                                    style="background-color: rgb(51, 102, 255); width: 13px; height: 13px;"><svg
+                                        width="5" height="5" viewBox="0 0 6 6">
+                                        <g fill="#fff" fill-rule="nonzero">
+                                            <path
+                                                d="M6.647 11L6.647 7.259 6.688 7.259 9.158 11 11 11 11 5 9.353 5 9.353 8.357 9.322 8.357 7.089 5 5 5 5 11z"
+                                                transform="translate(-123 -375) translate(20 365) translate(98 5)">
+                                            </path>
+                                        </g>
+                                    </svg></span>
+                            </li>
+                            <li class="mdMoreVisible profileBox">
+                                <button type="button" aria-haspopup="true" aria-expanded="false" data-attribute-id="gnb"
+                                    data-gnb-kind="photo" class="profileButton" aria-label="avatarButton"
+                                    data-badge="false">
+                                    <div class="avatarBorder">
+                                        <div class="avatarImage"
+                                            style="background-image:url(https://static.wanted.co.kr/oneid-user/UtVbWRNQp2MuxxH4dggmLq/3621fdd75d48b9efcefb31601d6c795faa65370fbe758ffdacac7ad28e6b93ed), url(https://static.wanted.co.kr/images/profile_default.png)">
+                                        </div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li class="mdMoreVisible leftDivision" data-attribute-id="gnb" data-gnb-kind="forEmployers">
+                                <a class="dashboardButton" href="/dashboard">기업 서비스</a>
+                            </li>
+                            <li class="Aside_visibleMenu__Dki9n">
+                                <button class="menuButton" aria-label="menuButton" type="button" data-attribute-id="gnb"
+                                    data-gnb-kind="more">
+                                    <svg width="18" height="18" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 12 10zm7 0a2 2 0 1 1-.001 4.001A2 2 0 0 1 19 10zM5 10a2 2 0 1 1-.001 4.001A2 2 0 0 1 5 10z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="Aside_visibleMenu__Dki9n"></div>
+                    </aside>
+                </nav>
+            </div>
+        </div>
+        <div class="Padding_padding___Nyki"></div>
+        <div class="ResumeList_ResumeList__mgJRt">
+            <aside class="CareerConnectBanner_CareerConnectBanner__FpF_i ResumeList_CareerConnectBanner__YIFtC">
+                <picture>
+                    <source srcset="https://static.wanted.co.kr/career_connect/banner-back-pc-common.webp"
+                        type="image/webp">
+                    <img src="https://static.wanted.co.kr/career_connect/banner-back-pc-common.png"
+                        alt="career-connect-icon">
+                </picture>
+                <button type="button" class="CareerConnectBanner_CareerConnectBanner__Banner__pYgJz"
+                    data-attribute-id="resumeList__scrapCareer__banner__click">
+                    <div
+                        class="CareerConnectBanner_CareerConnectBanner__Banner__Content__qO1G1 CareerConnectBanner_CareerConnectBanner__Banner__Content__Trio__Edf2i">
+                        <p>이력서 작성이 쉬워진다! 1분 만에 채워지는 경력정보</p><strong>내 경력 불러오기</strong>
+                        <picture>
+                            <source srcset="https://static.wanted.co.kr/career_connect/trio.webp" type="image/webp">
+                            <img src="https://static.wanted.co.kr/career_connect/trio.png" alt="career-connect-icon">
+                        </picture>
+                    </div>
+                </button>
+            </aside>
+            <div class="ResumeList_ResumeList_header__YriXn"><a href="/cv/intro"
+                    class="ResumeList_ResumeList_header_link__UNgxP"><span>원티드 이력서 소개</span>
+                    <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path
+                            d="M11.7341 16.2486C10.8677 16.5748 9.94548 16.7442 9 16.7442C4.7232 16.7442 1.25581 13.2771 1.25581 9C1.25581 4.72293 4.7232 1.25581 9 1.25581C11.0825 1.25581 13.0329 2.08087 14.476 3.524C15.9194 4.96743 16.7442 6.91758 16.7442 9C16.7442 11.0833 15.9194 13.0334 14.4761 14.4759C14.2308 14.721 14.2307 15.1186 14.4759 15.3639C14.721 15.6091 15.1186 15.6093 15.3639 15.3641C17.0406 13.6885 18 11.4199 18 9C18 6.58111 17.0406 4.31263 15.364 2.636C13.6877 0.959718 11.419 0 9 0C4.02965 0 0 4.02934 0 9C0 13.9707 4.02965 18 9 18C10.0973 18 11.1694 17.8031 12.1766 17.4239C12.5011 17.3017 12.6652 16.9396 12.543 16.615C12.4208 16.2905 12.0586 16.1264 11.7341 16.2486Z"
+                            fill="#3366FF"></path>
+                        <path
+                            d="M8.16279 5.65116C8.16279 5.18819 8.53786 4.81395 9 4.81395C9.46214 4.81395 9.83721 5.18819 9.83721 5.65116C9.83721 6.11414 9.46214 6.48837 9 6.48837C8.53786 6.48837 8.16279 6.11414 8.16279 5.65116Z"
+                            fill="#3366FF"></path>
+                        <path
+                            d="M9.62791 8.99668V13.0664C9.62791 13.4132 9.34678 13.6944 9 13.6944C8.65322 13.6944 8.37209 13.4132 8.37209 13.0664V8.99668C8.37209 8.64989 8.65322 8.36877 9 8.36877C9.34678 8.36877 9.62791 8.64989 9.62791 8.99668Z"
+                            fill="#3366FF"></path>
+                    </svg>
+                </a>
+                <button
+                    class="Button_Button__root__V1ie3 Button_Button__contained__toUI5 Button_Button__containedPrimary__gFaT9 Button_Button__containedSizeSmall__yIqp0 ResumeReviewButton_ResumeReviewButton__jOdAQ"
+                    data-attribute-id="resumeList__review__request"><span class="Button_Button__label__1Kk0v"><span
+                            class="Typography_Typography__root__xYuMs Typography_Typography__label1__sizeSmall__xUNxs Typography_Typography__weightBold__e15ql">AI
+                            이력서 리뷰</span><span
+                            class="Button_Button__endIcon__MpDfc Button_Button__endIcon__sizeSmall__WRRfs"><span
+                                class="SvgIcon_SvgIcon__root__8vwon"><svg class="SvgIcon_SvgIcon__root__svg__DKYBi"
+                                    viewBox="0 0 18 18">
+                                    <path
+                                        d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z">
+                                    </path>
+                                </svg></span></span></span><span
+                        class="Button_Button__interaction__kkYaa"></span></button>
+            </div>
+            <div class="ResumeList_ResumeList_listWrapper__YpnV_">
+                <div class="ResumeList_ResumeList_new__DBFGC">
+                    <div>
+                        <div class="ResumeItem_ResumeItem__MnI_V ResumeItem_ResumeItem__new__f5mnu"
+                            data-attribute-id="resumeList__resume__createNew" role="button">
+                            <div class="ResumeList_ResumeList_addItem__Aifx4">
+                                <div class="ResumeList_ResumeList_addItem_icon__yfHFj">
+                                    <svg width="22" height="22" viewBox="0 0 16 16" fill="none"
+                                        xmlns="https://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.25 0H0.75C0.335786 0 0 0.335786 0 0.75V12.25C0 12.6642 0.335786 13 0.75 13H3V15.25L3.00685 15.3518C3.05651 15.7178 3.3703 16 3.75 16H15.25L15.3518 15.9932C15.7178 15.9435 16 15.6297 16 15.25V3.75L15.9932 3.64823C15.9435 3.28215 15.6297 3 15.25 3L15.1482 3.00685C14.7822 3.05651 14.5 3.3703 14.5 3.75L14.499 14.499H4.499L4.49975 13H12.25C12.6642 13 13 12.6642 13 12.25V0.75C13 0.335786 12.6642 0 12.25 0ZM11.499 1.5V11.5H1.499V1.5H11.499Z"
+                                            fill="#fff"></path>
+                                    </svg>
+                                </div>
+                                <p>새 이력서 작성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ResumeItem_ResumeItem__MnI_V" data-attribute-id="" role="button">
+                    <div class="ResumeList_ResumeList_upload___7VWD" role="presentation" tabindex="0"><input type="file"
+                            multiple="" style="display:none" tabindex="-1"
+                            data-attribute-id="resumeList__resume__uploadFile">
+                        <div class="ResumeList_ResumeList_upload_icon__3SGaN">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 32 34">
+                                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                    <g stroke="#666" stroke-width="3">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M25.6 20.117L25.6 28.579 0 28.617 0 20.154M12.8.708L12.8 21.108"
+                                                    transform="translate(-543 -398) translate(543 398) translate(3.2 2.55)">
+                                                </path>
+                                                <path d="M18.8 0L12.8 7.083 6.8 0"
+                                                    transform="translate(-543 -398) translate(543 398) translate(3.2 2.55) rotate(-180 12.8 3.542)">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <p>파일 업로드</p>
+                    </div>
+                </div>
+                <div class="ResumeItem_ResumeItem__MnI_V" data-attribute-id="resumeList__resume__click" role="button">
+                    <div class="ResumeItem_ResumeItem_badge__sCl6m">
+                        <div class="MatchupBadge_Badge__Wj30S">
+                            <p>매치업 이력서</p>
+                        </div>
+                    </div>
+                    <div class="ResumeItem_ResumeItem_title__qQK05">
+                        <h3 iswriting="0">끊임없이 노력하는 개발자</h3>
+                        <p>2023.05.09</p>
+                    </div>
+                    <div class="ResumeItem_ResumeItem_info__c1IDT">
+                        <div class="ResumeItem_ResumeItem_lang__9yraF" iswriting="0">한</div>
+                        <span class="complete">작성 완료</span>
+                        <div id="resume-BAYFBgMCAE4HBQYEAAcGSkQ=-dropdown-container"
+                            class="ResumeItem_ResumeItem_menu__2rvp8">
+                            <button type="button" data-attribute-id="resumeList__resume__settings">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="https://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 6C10 7.104 10.896 8 12 8C13.104 8 14 7.104 14 6C14 4.896 13.104 4 12 4C10.896 4 10 4.896 10 6Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 14C10.896 14 10 13.104 10 12C10 10.896 10.896 10 12 10C13.104 10 14 10.896 14 12C14 13.104 13.104 14 12 14Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 20C10.896 20 10 19.104 10 18C10 16.896 10.896 16 12 16C13.104 16 14 16.896 14 18C14 19.104 13.104 20 12 20Z"
+                                        fill="#767676"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ResumeItem_ResumeItem__MnI_V" data-attribute-id="resumeList__resume__click" role="button">
+                    <div class="ResumeItem_ResumeItem_badge__sCl6m"></div>
+                    <div class="ResumeItem_ResumeItem_title__qQK05">
+                        <h3 iswriting="1">하율 2</h3>
+                        <p>2023.05.09</p>
+                    </div>
+                    <div class="ResumeItem_ResumeItem_info__c1IDT">
+                        <div class="ResumeItem_ResumeItem_lang__9yraF" iswriting="1">한</div>
+                        <span class="writing" iswriting="1">작성 중</span>
+                        <div id="resume-fFldVkgDBgsBBAoNTUA=-dropdown-container"
+                            class="ResumeItem_ResumeItem_menu__2rvp8">
+                            <button type="button" data-attribute-id="resumeList__resume__settings">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="https://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 6C10 7.104 10.896 8 12 8C13.104 8 14 7.104 14 6C14 4.896 13.104 4 12 4C10.896 4 10 4.896 10 6Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 14C10.896 14 10 13.104 10 12C10 10.896 10.896 10 12 10C13.104 10 14 10.896 14 12C14 13.104 13.104 14 12 14Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 20C10.896 20 10 19.104 10 18C10 16.896 10.896 16 12 16C13.104 16 14 16.896 14 18C14 19.104 13.104 20 12 20Z"
+                                        fill="#767676"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ResumeItem_ResumeItem__MnI_V" data-attribute-id="resumeList__resume__click" role="button">
+                    <div class="ResumeItem_ResumeItem_title__qQK05 ResumeItem_ResumeItem_title_file__PCkNT">
+                        <h3 iswriting="0">하율_ComeOn_프로젝트_수행내용.pdf</h3>
+                        <p>2023.02.26</p>
+                    </div>
+                    <div class="ResumeItem_ResumeItem_info__c1IDT">
+                        <div class="ResumeItem_ResumeItem_icon__IJBuS">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M16 1.25a.75.75 0 01.509.199l.077.082 4 5A.75.75 0 0119.49 7.55l-.076-.081L15.64 2.75H4.75v18.5h14.5V11a.75.75 0 011.493-.102l.007.102v11a.75.75 0 01-.648.743L20 22.75H4a.75.75 0 01-.743-.648L3.25 22V2a.75.75 0 01.648-.743L4 1.25h12zm-2 9a.75.75 0 01.743.648l.007.102v5a.75.75 0 01-.648.743L14 16.75h-4a.75.75 0 01-.743-.648L9.25 16v-5a.75.75 0 01.648-.743L10 10.25h4zm-.75 1.5h-2.5v3.5h2.5v-3.5zm-1.75-4.5h1a.75.75 0 01.102 1.493l-.102.007h-1a.75.75 0 01-.102-1.493l.102-.007h1zm1-3a.75.75 0 110 1.5h-1a.75.75 0 110-1.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="uploaded">첨부 완료</span>
+                        <div id="resume-BwEDBgUBBk4GT1U=-dropdown-container" class="ResumeItem_ResumeItem_menu__2rvp8">
+                            <button type="button" data-attribute-id="resumeList__resume__settings">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="https://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 6C10 7.104 10.896 8 12 8C13.104 8 14 7.104 14 6C14 4.896 13.104 4 12 4C10.896 4 10 4.896 10 6Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 14C10.896 14 10 13.104 10 12C10 10.896 10.896 10 12 10C13.104 10 14 10.896 14 12C14 13.104 13.104 14 12 14Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 20C10.896 20 10 19.104 10 18C10 16.896 10.896 16 12 16C13.104 16 14 16.896 14 18C14 19.104 13.104 20 12 20Z"
+                                        fill="#767676"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ResumeItem_ResumeItem__MnI_V" data-attribute-id="resumeList__resume__click" role="button">
+                    <div class="ResumeItem_ResumeItem_title__qQK05 ResumeItem_ResumeItem_title_file__PCkNT">
+                        <h3 iswriting="0">하율_ComeOn_프로젝트_수행내용.pdf</h3>
+                        <p>2022.11.22</p>
+                    </div>
+                    <div class="ResumeItem_ResumeItem_info__c1IDT">
+                        <div class="ResumeItem_ResumeItem_icon__IJBuS">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M16 1.25a.75.75 0 01.509.199l.077.082 4 5A.75.75 0 0119.49 7.55l-.076-.081L15.64 2.75H4.75v18.5h14.5V11a.75.75 0 011.493-.102l.007.102v11a.75.75 0 01-.648.743L20 22.75H4a.75.75 0 01-.743-.648L3.25 22V2a.75.75 0 01.648-.743L4 1.25h12zm-2 9a.75.75 0 01.743.648l.007.102v5a.75.75 0 01-.648.743L14 16.75h-4a.75.75 0 01-.743-.648L9.25 16v-5a.75.75 0 01.648-.743L10 10.25h4zm-.75 1.5h-2.5v3.5h2.5v-3.5zm-1.75-4.5h1a.75.75 0 01.102 1.493l-.102.007h-1a.75.75 0 01-.102-1.493l.102-.007h1zm1-3a.75.75 0 110 1.5h-1a.75.75 0 110-1.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="uploaded">첨부 완료</span>
+                        <div id="resume-BwQHBgAFAk4GT1U=-dropdown-container" class="ResumeItem_ResumeItem_menu__2rvp8">
+                            <button type="button" data-attribute-id="resumeList__resume__settings">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="https://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 6C10 7.104 10.896 8 12 8C13.104 8 14 7.104 14 6C14 4.896 13.104 4 12 4C10.896 4 10 4.896 10 6Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 14C10.896 14 10 13.104 10 12C10 10.896 10.896 10 12 10C13.104 10 14 10.896 14 12C14 13.104 13.104 14 12 14Z"
+                                        fill="#767676"></path>
+                                    <path
+                                        d="M12 20C10.896 20 10 19.104 10 18C10 16.896 10.896 16 12 16C13.104 16 14 16.896 14 18C14 19.104 13.104 20 12 20Z"
+                                        fill="#767676"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
