@@ -1,0 +1,101 @@
+{{ >layout/head}}
+
+<link rel="stylesheet" href="/css/userBoard/searchJob.css">
+
+{{ >layout/header}}
+
+<!-- 광고; 캐러셀? -->
+
+<div class="search">
+    <section class="search-section">
+        <div class="search-box">
+            <div class="search-card">
+                <div class="search-name">분야</div>
+                <hr class="vertical-line">
+                <div class="search-name">세부분야</div>
+            </div>
+            <div class="search-card">
+                <div class="search-div">
+                    <ul class="search-detail">
+                        <li class="search-region">지역</li>
+                        <form>
+                            <div class="dropdown">
+                                <button>지역</button>
+                                <div class="dropdown-content">
+                                    <label><input type="checkbox"> 옵션 1</label>
+                                    <label><input type="checkbox"> 옵션 2</label>
+                                    <label><input type="checkbox"> 옵션 3</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Submit" display="none">
+                        </form>
+                        <li class="search-career">경력</li>
+                        <li class="search-tech">기술스택
+                    </ul>
+
+                    <div>
+                        <div class="search-sort">응답률순</div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr" style="width: 100%;">
+            <div class="search-card">
+                <div class="search-ajax">ajax로 지역/경력/기술스택 출력하기</div>
+            </div>
+        </div>
+    </section>
+    <hr class="hr-line">
+    <section class="biz">
+
+        <div class="hot-position-box">
+            <button class="hot-position-card">
+                <img class="hot-position-img" src="/images/basic.jpg"></img>
+                <div class="hot-position-card-text">
+                    <div class="hot-position-title">DevOps Engineer</div>
+                    <div class="hot-position-company">DevOps Engineer</div>
+                    <div class="hot-position-location">DevOps Engineer</div>
+                    <div class="hot-position-compensation">DevOps Engineer</div>
+                </div>
+
+            </button>
+            <button class="hot-position-card">
+                <img class="hot-position-img" src="/images/basic.jpg"></img>
+                <div class="hot-position-card-text">
+                    <div class="hot-position-title">ML 연구원/Engineer</div>
+                    <div class="hot-position-company">ML 연구원/Engineer</div>
+                    <div class="hot-position-location">ML 연구원/Engineer</div>
+                    <div class="hot-position-compensation">ML 연구원/Engineer</div>
+                </div>
+
+            </button>
+            <button class="hot-position-card">
+                <img class="hot-position-img" src="/images/basic.jpg"></img>
+                <div class="hot-position-card-text">
+                    <div class="hot-position-title">퍼포먼스마케터</div>
+                    <div class="hot-position-company">퍼포먼스마케터</div>
+                    <div class="hot-position-location">퍼포먼스마케터</div>
+                    <div class="hot-position-compensation">퍼포먼스마케터</div>
+                </div>
+
+            </button>
+            <button class="hot-position-card">
+                <img class="hot-position-img" src="/images/basic.jpg"></img>
+                <div class="hot-position-card-text">
+                    <div class="hot-position-title">SCM 매니저</div>
+                    <div class="hot-position-company">SCM 매니저</div>
+                    <div class="hot-position-location">SCM 매니저</div>
+                    <div class="hot-position-compensation">SCM 매니저</div>
+                </div>
+
+            </button>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+{{ >layout/footer}}
