@@ -32,9 +32,21 @@ public class userController {
         return "/userBoard/joinForm";
     }
 
+    @GetMapping("/manageNotice")
+    public String manageNotice() {
+        return "/bizBoard/manageNotice";
+    }
+
+    @GetMapping("/write/resume")
+    public String writeResume() {
+        return "/userBoard/writeResume";
+
+
+
     @GetMapping("/bizRegistration")
     public String Registration() {
         return "/bizBoard/bizRegistration";
+
     }
 
     @GetMapping("/bizTrueMain")
