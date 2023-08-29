@@ -11,8 +11,30 @@ public class userController {
         return "/userBoard/resume";
     }
 
+
     @GetMapping("/searchJob")
     public String searchJob() {
         return "/userBoard/searchJob";
     }
+
+
+
+   @GetMapping("/bizDetail")
+    public String biz(){
+
+        return "/bizBoard/bizDetail";
+    }
+    
+
+    @GetMapping("/loginForm")
+    public String login() {
+        return "/userBoard/loginForm";
+    }
+
+    @GetMapping("/joinForm")
+    public String join() {
+        return "/userBoard/joinForm";
+    }
+
+
 }
