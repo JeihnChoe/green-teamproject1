@@ -12,6 +12,15 @@ public class userController {
         return "/userBoard/resume";
     }
 
+
+
+   @GetMapping("/bizDetail")
+    public String biz(){
+
+        return "/bizBoard/bizDetail";
+    }
+    
+
     @GetMapping("/loginForm")
     public String login() {
         return "/userBoard/loginForm";
@@ -21,4 +30,5 @@ public class userController {
     public String join() {
         return "/userBoard/joinForm";
     }
+
 }
