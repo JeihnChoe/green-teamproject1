@@ -1,0 +1,119 @@
+.number-box {
+      width: 0px;
+      height: 30px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .number-input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 5px;
+    }
+     .number-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid #ccc;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .number-input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 5px;
+    }
+
+    .input-box {
+      width: 230px;
+      height: 30px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      position: relative;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .input-box.active {
+      color: #000;
+    }
+    .Address{
+        background-color: white;
+        border-width: 1px;
+        border: 1px solid #ccc;
+    }
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 20px;
+      }
+  
+      legend {
+        font-weight: bold;
+      }
+  
+      input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+  
+      textarea {
+        width: 100%;
+        padding: 5px;
+      }
+      .textHead{
+        display: flex;
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .mainBtn{
+        margin-left: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: white;
+border: none;
+    }
+      .btn{
+        margin-left: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: white;
+      color: black;
+      border: 1px solid #ccc;
+      padding: 5px 15px;
+      font-size: 12px;
+      width: 500px;
+      }
+
+      .textNotice{
+        margin-left: 50px;
+        margin-top: 30px;
+      }
+      .marginController{
+        margin: 20px;
+      }
+
+      .dropdown{
+        display: inline-block;
+      background-color: white;
+      }
+
+      .noticeMain{
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+      .dropdown-menu {
+        width: 100%; /* 드롭다운 메뉴 너비 100%로 설정 */
+        min-width: inherit; /* 최소 너비 상속 */
+      }
+  
