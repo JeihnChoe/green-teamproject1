@@ -12,14 +12,11 @@ public class userController {
         return "/userBoard/resume";
     }
 
-
-
-   @GetMapping("/bizDetail")
-    public String biz(){
+    @GetMapping("/bizDetail")
+    public String biz() {
 
         return "/bizBoard/bizDetail";
     }
-    
 
     @GetMapping("/loginForm")
     public String login() {
@@ -29,6 +26,11 @@ public class userController {
     @GetMapping("/joinForm")
     public String join() {
         return "/userBoard/joinForm";
+    }
+
+    @GetMapping("/write/resume")
+    public String writeResume() {
+        return "/userBoard/writeResume";
     }
 
 }
