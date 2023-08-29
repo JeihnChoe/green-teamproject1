@@ -31,4 +31,9 @@ public class userController {
         return "/userBoard/joinForm";
     }
 
+    @GetMapping("/bizRegistration")
+    public String Registration(){
+        return "/bizBoard/bizRegistration";
+    }
+
 }
