@@ -138,3 +138,8 @@
     right: 0;
     /* 오른쪽 위치 설정 */
   }
+
+  .container-fluid{
+    margin-inline-start: 800px;
+    margin-inline-end: 900px;
+  }

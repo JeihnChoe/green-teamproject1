@@ -32,6 +32,11 @@ public class userController {
         return "/userBoard/joinForm";
     }
 
+
+    @GetMapping("/customerBoard")
+    public String customerBoard() {
+        return "/customerBoard/customerBoard";
+
     @GetMapping("/manageNotice")
     public String manageNotice() {
         return "/bizBoard/manageNotice";
@@ -56,6 +61,7 @@ public class userController {
    @GetMapping("/bizTrueMain")
     public String bizTrueMain() {
         return "/bizBoard/bizTrueMain";
+
     }
 
 }
