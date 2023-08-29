@@ -19,7 +19,6 @@ public class userController {
     @GetMapping("/bizDetail")
     public String biz() {
 
-
         return "/bizBoard/bizDetail";
     }
 
@@ -41,11 +40,17 @@ public class userController {
     @GetMapping("/write/resume")
     public String writeResume() {
         return "/userBoard/writeResume";
-
+    }
 
     @GetMapping("/bizRegistration")
-    public String Registration(){
+    public String Registration() {
         return "/bizBoard/bizRegistration";
+
+    }
+
+    @GetMapping("/searchUser")
+    public String searchUser() {
+        return "/bizBoard/searchUser";
 
     }
 

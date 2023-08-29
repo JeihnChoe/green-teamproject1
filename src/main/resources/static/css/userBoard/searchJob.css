@@ -22,10 +22,13 @@
 
     width: 100%;
 
+
+
 }
 
 .search-section {
     display: flex;
+
 }
 
 .search-box {
@@ -43,6 +46,7 @@
     height: 45px;
     padding: 10px;
     width: 100%;
+
 }
 
 
