@@ -1,0 +1,165 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* 위 아래 여백 설정 */
+    max-width: 50%; /* 최대 너비를 100%로 설정 */
+    margin: 50px auto;
+    margin-top: 0px;
+    
+}
+.name {
+    font-size: 20px;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+ul {
+    background-color: rgb(210, 235, 243);
+    padding: 10px;
+    border-radius: 10px;
+    list-style-position: inside;
+    /* 마커를 내부에 배치 */
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.light-text {
+    color: rgb(146, 143, 143);
+}
+
+/* 공통 스타일 */
+.custom-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* + 경력 불러오기 버튼 스타일 */
+.blue-button {
+    background-color: rgb(249, 249, 253);
+    color: rgb(21, 42, 228);
+    border-color: blue;
+}
+
+/* + 직접 추가하기 버튼 스타일 */
+.white-button {
+    background-color: transparent;
+    border-color: lightgray;
+}
+
+.plus-button {
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+.plus-hr {
+    border-color: rgb(247, 239, 239);
+    margin-top: 20px;
+}
+
+.light-text {
+    color: rgb(158, 156, 156);
+}
+
+.checkbox {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.right-text {
+    text-align: flex;
+}
+
+.school {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.school li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.left-text,
+.right-text {
+    margin: 0;
+}
+
+.left-text {
+    margin-right: 60px;
+    /* 왼쪽 텍스트와 오른쪽 텍스트 사이의 마진 */
+}
+
+.school li button {
+    background-color: rgb(158, 156, 156);
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: green;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+}
+
+.search-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.save-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 70px;
+}
