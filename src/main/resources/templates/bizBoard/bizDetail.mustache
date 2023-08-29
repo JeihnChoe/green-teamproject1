@@ -1,59 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/main/resources/css/main.css" />
-
-    <title>Document</title>
-</head>
+{{ >layout/head}}
+<link rel="stylesheet" href="/css/bizBoard/bizDetail.css">
+{{ >layout/header}}
 
 <body>
-    <div class="container">
-        <a class="HYBE" href="#"><img src="icon.png" class="icon-image">하이브(HYBE)</a>
-        <button class="align-service" type="button">팔로우</button>
-        <hr class="horizontal-line">
-        <br>
-        <br>
-        <div class="position">
-            <p>채용 중인 포지션</p>
-        </div>
-        <section class="body">
-            <div class="advertisement"></div>
-            <div class="category-box">
-                <div class="category-card">
+
+
+    <div class="main-container">
+        <div class="left-container">
+            <a class="HYBE" href="#"><img src="icon.png" class="icon-image">하이브(HYBE)</a>
+            <button class="biz-service" type="button">팔로우</button>
+            <hr class="horizontal-line">
+            <br>
+            <br>
+            <div class="position">
+                <p>채용 중인 포지션</p>
+            </div>
+            <section class="body">
+                <div class="advertisement"></div>
+                <div class="cate-box">
+                    <div class="cate-card">
+                        <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                        <div class="cate-name">
+                            <div class="position-head">응원봉 연출오퍼레이터</div>
+                            <div clsass="position-body">채용보상금 100만원</div>
+                            <div class="position-foot">상시 채용</div>
+                        </div>
+                    </div>
+                    <div class="cate-card">
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                        <div class="cate-name">
+                            <div class="position-head">T&D 운영</div>
+                            <div class="position-body">채용보상금 100만원</div>
+                            <div class="position-foot">상시 채용</div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="cate-box">
+                    <div class="cate-card">
+                        <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                        <div class="cate-name">
+                            <div class="position-head">응원봉 연출 디자인</div>
+                            <div class="position-body">채용보상금 100만원</div>
+                            <div class="position-foot">상시 채용</div>
+                        </div>
+                    </div>
+                    <div class="cate-card">
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                        <div class="cate-name">
+                            <div class="position-head">응원봉 연출오퍼레이터</div>
+                            <div class="position-body">채용보상금 100만원</div>
+                            <div class="position-foot">상시 채용</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <details>
+                    <!-- details는 상세 내용을 접을 수 있다.  -->
+                    <summary class="more-positions-box">더 많은 포지션 보기</summary>
+                    <div class="cate-box">
+                        <div class="cate-card">
+                            <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                            <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                            <div class="cate-name">
+                                <div class="position-head">응원봉 연출오퍼레이터</div>
+                                <div class="position-body">채용보상금 100만원</div>
+                                <div class="position-foot">상시 채용</div>
+                            </div>
+                        </div>
+                        <div class="cate-card">
+                            <div class="cate-name">
+                                <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                                <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                                <div class="position-head">응원봉 연출오퍼레이터</div>
+                                <div class="position-body">채용보상금 100만원</div>
+                                <div class="position-foot">상시 채용</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="cate-box">
+                        <div class="cate-card">
+                            <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                            <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                            <div class="cate-name">
+                                <div class="position-head">응원봉 연출오퍼레이터</div>
+                                <div class="position-body">채용보상금 100만원</div>
+                                <div class="position-foot">상시 채용</div>
+                            </div>
+                        </div>
+                        <div class="cate-card">
+                            <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                            <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                            <div class="cate-name">
+                                <div class="position-head">응원봉 연출오퍼레이터</div>
+                                <div class="position-body">채용보상금 100만원</div>
+                                <div class="position-foot">상시 채용</div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+            <br>
+            <br>
+            <div class="my-menu-name">회사 소개</div>
+            <section class="body">
+                <div class="advertisement"></div>
+                <div class="img-box">
+                    <div class="img-card">
+                        <img class="category-img" src="/images/Hybe.jpg"></img>
+                    </div>
+                    <div class="img-card">
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                        <img class="category-img" src="/images/Hybe.jpg"></img>
+                    </div>
+                    <div class="img-card">
+                        <img class="category-img" src="/images/Hybe.jpg"></img>
+                    </div>
+                    <div class="img-card">
+                        <img class="category-img" src="/images/Hybe.jpg"></img>
+                    </div>
+                    <div class="img-card">
+                        <img class="category-img" src="/images/Hybe.jpg"></img>
+                    </div>
+                </div>
+
+
+
+            </section>
+            <textarea class="textarea" cols="93" rows="5">1325235</textarea>
+
+            <br>
+            <br>
+            <div class="biz-news"> 이 회사의 뉴스</div>
+            <div class="cate-box">
+                <div class="cate-card">
                     <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
                     <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
-                    <div class="category-name">
-                        <p>응원봉 연출오퍼레이터</p>
-                        <p>채용보상금 100만원</p>
-                        <p>상시 채용</p>
+                    <div class="cate-name">
+                        <div class="position-head">역대 최고 실적 경신</div>
+                        <div class="position-body"></div>
+                        <div class="position-foot">green@new 23.08.28</div>
                     </div>
                 </div>
-                <div class="category-card">
+                <div class="cate-card">
                     <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
-                    <div class="category-name">
-                        <p>응원봉 연출오퍼레이터</p>
-                        <p>채용보상금 100만원</p>
-                        <p>상시 채용</p>
+                    <div class="cate-name">
+                        <div class="position-head">2022 글로벌 보이그룹 합작</div>
+                        <div class="position-body"></div>
+                        <div class="position-foot">green@new 23.08.28</div>
                     </div>
                 </div>
-             
+
             </div>
-            <div class="my-menu">
-                <div class="my-menu-card">
-                    <div class="my-menu-name">내 프로필</div>
-                    <div class="my-menu-name">매치업</div>
+            <br>
+            <div class="cate-box">
+                <div class="cate-card">
+                    <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                    <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                    <div class="cate-name">
+                        <div class="position-head">음악산업페스타 출격</div>
+                        <div class="position-body"></div>
+                        <div class="position-foot">green@new 23.08.28</div>
+                    </div>
                 </div>
+                <div class="cate-card">
+                    <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                    <div class="cate-name">
+                        <div class="position-head">네이버와 플랫폼 강화</div>
+                        <div class="position-body"></div>
+                        <div class="position-foot">green@new 23.08.28</div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-
-
-        <div>
-
         </div>
-    </div>
-</body>
 
-</html>
+        <div class="right-container">
+
+            <div class="position">
+            </div>
+            <section class="body">
+                <div class="advertisement"></div>
+                <div class="cate-box">
+                    <div class="apply-card">
+                        <!-- backgrount-image는 높이와 너비를 줘야 보인다 -->
+                        <!--<img class="category-img" src="../../images/basic.jpg"></img>-->
+                            <div class="position-head">지원하기</div>
+                            <div class="position-body">
+                    
+                                <div class="apply-save">
+                                    관심기업 등록
+                                </div>
+                                <div class="apply-save2">
+                                    지원하기(버튼클릭)
+                                </div>
+
+                                <div>
+                                    기술스택
+                                </div>
+                            <div class="position-foot">
+                                <h5>자바스크립트</h5>
+                                <h5>타입스크립트</h5>
+                                <h5>자바</h5>
+                                <h5>C</h5>
+                            </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    </div>
+
+    {{ >layout/footer}}

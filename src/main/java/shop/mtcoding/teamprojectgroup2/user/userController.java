@@ -11,4 +11,12 @@ public class userController {
     public String resume(){
         return "/userBoard/resume";
     }
+
+
+   @GetMapping("/bizDetail")
+    public String biz(){
+
+        return "/bizBoard/bizDetail";
+    }
+    
 }
