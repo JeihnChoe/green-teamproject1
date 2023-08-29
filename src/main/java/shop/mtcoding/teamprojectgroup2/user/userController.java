@@ -7,13 +7,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class userController {
 
     @GetMapping("/resume")
-
     public String resume() {
         return "/userBoard/resume";
     }
 
-    @GetMapping("/bizDetail")
-    public String biz() {
+    @GetMapping("/searchJob")
+    public String searchJob() {
+        return "/userBoard/searchJob";
+    }
+
+   @GetMapping("/bizDetail")
+    public String biz(){
+
 
         return "/bizBoard/bizDetail";
     }
@@ -28,9 +33,16 @@ public class userController {
         return "/userBoard/joinForm";
     }
 
+
     @GetMapping("/write/resume")
     public String writeResume() {
         return "/userBoard/writeResume";
+
+
+    @GetMapping("/bizRegistration")
+    public String Registration(){
+        return "/bizBoard/bizRegistration";
+
     }
 
 }
