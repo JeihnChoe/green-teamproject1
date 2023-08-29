@@ -1,0 +1,69 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* 위 아래 여백 설정 */
+    max-width: 50%; /* 최대 너비를 100%로 설정 */
+    margin: 50px auto;
+    margin-top: 0px;
+    
+}
+.align-service {
+    background-color: blue; /* 파란색 배경 */
+    color: white; /* 흰색 글자 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(129, 129, 219); /* 파란색 배경 */
+    padding: 60px 100px;
+    border-radius: 10px; /* 모서리를 둥글게 */
+    color: white; /* 글씨색 흰색 */
+    
+}
+
+.text {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.size-up{
+    font-size: 40px;
+}
+
+.button {
+    background-color: black; /* 검은색 배경 */
+    color: white; /* 글씨색 흰색 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.data{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+.person{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(32, 32, 32);
+    margin-bottom: 20px;
+}
+.backgrond{
+    background-color: rgb(222, 222, 252);
+}
+.final-backgrond{
+    background-color: rgb(247, 246, 246);
+}
+.final{
+    text-align: center;
+    margin-top: 10px;
+}
