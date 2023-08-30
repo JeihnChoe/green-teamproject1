@@ -42,7 +42,7 @@ public class userController {
         return "/bizBoard/manageNotice";
     }
 
-    @GetMapping("/write/resume")
+    @GetMapping("/writeResume")
     public String writeResume() {
         return "/userBoard/writeResume";
     }
@@ -83,9 +83,15 @@ public class userController {
         return "/userBoard/userRevise";
     }
 
+
+    @GetMapping("/machup")
+    public String machup() {
+        return "/userBoard/machup";
+      
     @GetMapping("/searchresult")
     public String searchResult() {
         return "/customerBoard/searchResult";
+
     }
 
 }
