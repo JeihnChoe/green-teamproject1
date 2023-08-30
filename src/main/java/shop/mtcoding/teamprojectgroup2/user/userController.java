@@ -52,7 +52,7 @@ public class userController {
         return "/bizBoard/bizRegistration";
     }
 
-    @GetMapping("/bizmain")
+    @GetMapping("/bizMain")
     public String bizMain() {
         return "/bizBoard/bizMain";
     }
@@ -62,18 +62,18 @@ public class userController {
         return "/bizBoard/bizTrueMain";
     }
 
-
     @GetMapping("/searchUser")
     public String searchUser() {
         return "/bizBoard/searchUser";
 
     }
+
     @GetMapping("/manageResume")
     public String manageResume() {
         return "/userBoard/manageResume";
     }
 
-    @GetMapping("/customersubmitquestion")
+    @GetMapping("/customersubmitQuestion")
     public String question() {
         return "/customerBoard/customersubmitQuestion";
     }
@@ -83,11 +83,11 @@ public class userController {
         return "/userBoard/userRevise";
     }
 
+    @GetMapping("/matchup")
+    public String matchup() {
+        return "/userBoard/matchup";
+    }
 
-    @GetMapping("/machup")
-    public String machup() {
-        return "/userBoard/machup";
-      
     @GetMapping("/searchresult")
     public String searchResult() {
         return "/customerBoard/searchResult";
