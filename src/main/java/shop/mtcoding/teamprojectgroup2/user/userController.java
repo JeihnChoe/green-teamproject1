@@ -47,11 +47,9 @@ public class userController {
         return "/userBoard/writeResume";
     }
 
-
     @GetMapping("/bizRegistration")
     public String Registration() {
         return "/bizBoard/bizRegistration";
-
     }
 
     @GetMapping("/bizmain")
@@ -62,7 +60,11 @@ public class userController {
     @GetMapping("/bizTrueMain")
     public String bizTrueMain() {
         return "/bizBoard/bizTrueMain";
+    }
 
+    @GetMapping("/manageResume")
+    public String manageResume() {
+        return "/userBoard/manageResume";
     }
 
     @GetMapping("/customersubmitquestion")
