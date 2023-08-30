@@ -1,96 +1,69 @@
 package shop.mtcoding.teamprojectgroup2.user;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class userController {
+public class UserController {
 
-    @GetMapping("/resume")
-    public String resume() {
-        return "/userBoard/resume";
-    }
+    // DI(의존성주입)
+    @Autowired
+    UserService userService;
 
-    @GetMapping("/searchJob")
-    public String searchJob() {
-        return "/userBoard/searchJob";
-    }
-
-    @GetMapping("/bizDetail")
-    public String biz() {
-
-        return "/bizBoard/bizDetail";
-    }
-
-    @GetMapping("/loginForm")
-    public String login() {
-        return "/userBoard/loginForm";
-    }
-
+    // 완료
     @GetMapping("/joinForm")
-    public String join() {
+    public String joinForm() {
         return "/userBoard/joinForm";
     }
 
-    @GetMapping("/customerBoard")
-    public String customerBoard() {
-        return "/customerBoard/customerBoard";
+    @PostMapping("/join")
+    public void join() {
+        userService.회원가입();
     }
 
-    @GetMapping("/manageNotice")
-    public String manageNotice() {
-        return "/bizBoard/manageNotice";
+    // 완료
+    @GetMapping("/loginForm")
+    public String loginForm() {
+        return "/userBoard/loginForm";
     }
 
+    @PostMapping("/login")
+    public void login() {
+        userService.로그인();
+    }
+
+    // 완료
+    @GetMapping("/resumeForm")
+    public String resumeForm() {
+        return "/userBoard/resumeForm";
+    }
+
+    // 완료
+    @GetMapping("/searchJob")
+    public String searchJob() {
+
+        return "/userBoard/searchJob";
+    }
+
+    // 완료
     @GetMapping("/writeResume")
     public String writeResume() {
         return "/userBoard/writeResume";
     }
 
-    @GetMapping("/bizRegistration")
-    public String Registration() {
-        return "/bizBoard/bizRegistration";
-    }
-
-    @GetMapping("/bizMain")
-    public String bizMain() {
-        return "/bizBoard/bizMain";
-    }
-
-    @GetMapping("/bizTrueMain")
-    public String bizTrueMain() {
-        return "/bizBoard/bizTrueMain";
-    }
-
-    @GetMapping("/searchUser")
-    public String searchUser() {
-        return "/bizBoard/searchUser";
-
-    }
-
+    // 완료
     @GetMapping("/manageResume")
     public String manageResume() {
         return "/userBoard/manageResume";
     }
 
-    @GetMapping("/customersubmitQuestion")
-    public String question() {
-        return "/customerBoard/customersubmitQuestion";
-    }
+    // 완료
 
-    @GetMapping("/userRevise")
-    public String userRevise() {
-        return "/userBoard/userRevise";
-    }
-
-    @GetMapping("/matchup")
-    public String matchup() {
-        return "/userBoard/matchup";
-    }
-
-    @GetMapping("/searchResult")
-    public String searchResult() {
-        return "/customerBoard/searchResult";
+    @GetMapping("/matchUp")
+    public String matchUp() {
+        return "/biz";
 
     }
 
