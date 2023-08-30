@@ -1,0 +1,85 @@
+{{ >/layout/head}}
+<link rel="stylesheet" href="/css/customerBoard/customersubmitQuestion.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+{{ >/layout/customerHeader}}
+
+<div class="main-container">
+    <div class="header">
+        <div style="color: rgb(145, 142, 142);">원티드 고객센터 > 문의등록</div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="검색어를 입력하세요...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="regiest">문의 등록</div>
+    <div class="weight">이메일 주소*</div>
+    <input type="text" class="input-box" placeholder="가입하신 이메일 주소를 기입해주세요.(비회원은 수신 가능한 이메일)">
+
+    <script>
+        $(document).ready(function () {
+            $(".input-box").on("focus", function () {
+                $(this).attr("placeholder", "");
+            });
+        });
+    </script>
+    <div class="regiest">제목<span style="color: red;">*</span></div>
+    <input type="text" class="input-box" placeholder="(예) 이벤트 신청 문의ㅣ보상금 신청ㅣ수수료 정산 등, 키워드를 넣으시면 도움말 문서가 자동 검색 됩니다.">
+
+    <script>
+        $(document).ready(function () {
+            $(".input-box").on("focus", function () {
+                $(this).attr("placeholder", "");
+            });
+        });
+    </script>
+    <div class="regiest">설명<span style="color: red;">*</span> </div>
+    <textarea class="box-height input-box info-text" id="descriptionInput"
+        onfocus="clearValue(this)">상세한 문의 사항을 기입해주세요. 저희 지원 스태프가 영업일 기준 1~2일 이내 가능한 빨리 답변 드릴 수 있도록 노력하겠습니다.</textarea>
+
+
+
+    <script>
+        function clearValue(input) {
+            if (input.value === input.defaultValue) {
+                input.value = '';
+            }
+        }
+
+    </script>
+    <div class="regiest">연락처<span style="color: red;">*</span></div>
+    <input type="text" class="input-box" placeholder=" - 없이 번호만 입력">
+
+    <script>
+        $(document).ready(function () {
+            $(".input-box").on("focus", function () {
+                $(this).attr("placeholder", "");
+            });
+        });
+    </script>
+    <div class="regiest">첨부 파일</div>
+    <div class="file-upload">
+        <label for="fileInput" class="upload-label">
+            <span class="upload-text upload-text-blue">파일 추가</span>
+            <span class="upload-text upload-text-light">또는 파일을 여기로 드래그</span>
+        </label>
+        <input type="file" id="fileInput" class="file-input">
+    </div>
+    <div class="regiest">개인정보 수집 및 이용에 대한 동의 내용</div>
+    <ul class="info-list">
+        <li>개인정보 수집 항목: 이메일 연락처</li>
+        <li>수집목적:고객식별, 문의 응대, 서비스 품질 향상</li>
+        <li>보유 및 이용기간: 수집 목적이 달성되면 지체없이 모든 개인정보를 파기합니다.단,관계법령에서 일정 기간 정보의 보관을 규정한 경우에 한해 분리 보관 후 파기합니다.</li>
+    </ul>
+    <div class="info-text">
+        *위 동의는 거부할 수 있으며, 거부시 해당 문의를 처리할 수 없습니다.
+    </div>
+    <div class="checkbox-container">
+        <input type="checkbox" id="agreeCheckbox">
+        <label for="agreeCheckbox">동의합니다<span style="color: red;">*</span></label>
+    </div>
+    <button class="final">제출</button>
+
+</div>
+
+
+{{ >layout/footer}}
