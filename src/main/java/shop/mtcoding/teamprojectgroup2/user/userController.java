@@ -54,4 +54,10 @@ public class userController {
 
     }
 
+    @GetMapping("/manageResume")
+    public String manageResume() {
+        return "/userBoard/manageResume";
+
+    }
+
 }
