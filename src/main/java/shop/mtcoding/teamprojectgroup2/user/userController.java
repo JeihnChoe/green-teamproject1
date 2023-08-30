@@ -73,8 +73,12 @@ public class userController {
     }
 
     @GetMapping("/userRevise")
-    public String userRevise(){
+    public String userRevise() {
         return "/userBoard/userRevise";
     }
 
+    @GetMapping("/searchresult")
+    public String searchResult() {
+        return "/customerBoard/searchResult";
+    }
 }
