@@ -88,7 +88,7 @@ public class userController {
         return "/userBoard/matchup";
     }
 
-    @GetMapping("/searchresult")
+    @GetMapping("/searchResult")
     public String searchResult() {
         return "/customerBoard/searchResult";
 
