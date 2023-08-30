@@ -1,0 +1,77 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* 위 아래 여백 설정 */
+    max-width: 50%; /* 최대 너비를 100%로 설정 */
+    margin: 50px auto;
+    margin-top: 0px;
+    
+}
+
+.reviseHead{
+    margin-top: 20px;
+    text-align: center;
+}
+.left-container {
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgb(214, 214, 214);
+    padding: 10px;
+}
+.hiring-notice {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hr-notice {
+    border-top: 1px solid black;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.notice-list {
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: transparent;
+    padding: 7px;
+}
+.notice-exit{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+}
+.notice-email{
+
+    text-align: left;
+    border: none;
+    background-color: transparent;
+  
+}
+.input-box {
+    width: 280px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    color: #aaa;
+    
+  }
+  .notice-test{
+    display: flex;
+    justify-content: flex-end; /* 요소들을 오른쪽으로 정렬 */
+  }
+
+  
+  .mainBtn{
+    background-color: white;
+border: 1px solid gray;
+
+}
+
+

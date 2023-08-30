@@ -1,0 +1,181 @@
+{{ >layout/head}}
+<link rel="stylesheet" href="/css/bizBoard/bizTrueMain.css">
+{{ >layout/header}}
+
+<div class="main">
+    <div class="left-container">
+        <div class="bizInfo">
+            <div class="bizName">
+                <img class="bizName-img" src="/images/basic.jpg"></img>
+                <div class="bizName-name">회사이름</div>
+            </div>
+            <hr class="hr-info">
+            <div class="managerName">개인이름</div>
+        </div>
+
+        <button class="notice-save">+ 공고 등록하기</button>
+        <button class="notice-save">+ 인재풀 탐색하기</button>
+        <hr class="hr-notice">
+        <div class="hiring-notice">현재 지원자 관리</div>
+        <hr class="hr-notice">
+        <button class="notice-list">채용공고 관리       +</button>
+        <button class="notice-list">제안 보낸 인재풀 관리</button>
+
+        <br>
+        <br>
+        <button class="notice-listdown">회사정보</button>
+        <button class="notice-listdown">채용공고</button>
+        <br>
+        <button class="notice-listdown">프리렌서 매칭</button>
+        <button class="notice-listdown">HP 솔루션</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+    <div class="right-container">
+        <h4 class="manageNotice-main"> 채용공고 관리 ㅣ 지원서 전체 </h4>
+        <div class="notice-buttons">
+            <button class="notice-button all">지원서 현황</button>
+            
+            <button class="notice-button hiring">서류통과</button>
+            <button class="notice-button hiring">면접</button>
+
+            <button class="notice-button end">최종합격</button>
+        </div>
+
+        <table class="table">
+            <thead class="table-success">
+                <tr>
+                    <th>지원자명</th>
+                    <th>지원직군</th>
+                    <th>지원일</th>
+                    <th>지원자관리</th>
+                    <th>지원서 관리</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="notice-item" onclick="alert('첫 번째 행 버튼 클릭')">
+
+                    <td>진성훈</td>
+                    <td>백엔드</td>
+                    <td>2023.08.29</td>
+                    <td>서류 통과</td>
+                    <td><button class="manage">열람</button>
+                    <button class="manage">합격</button>
+                    <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('두 번째 행 버튼 클릭')">
+
+                    <td>대한</td>
+                    <td>마케팅</td>
+                    <td>2023.08.29</td>
+                    <td>면접</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('셋 번째 행 버튼 클릭')">
+
+                    <td>민국</td>
+                    <td>프론트엔드</td>
+                    <td>2023.08.29</td>
+                    <td>면접</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('넷 번째 행 버튼 클릭')">
+
+                    <td>만세</td>
+                    <td>회계</td>
+                    <td>2023.08.29</td>
+                    <td>최종합격</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('다섯 번째 행 버튼 클릭')">
+
+                    <td>취준생</td>
+                    <td>백엔드</td>
+                    <td>2023.08.29</td>
+                    <td>서류 통과</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('여섯 번째 행 버튼 클릭')">
+
+                    <td>백수</td>
+                    <td>프론트엔드</td>
+                    <td>2023.08.29</td>
+                    <td>지원서 접수</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr><tr class="notice-item" onclick="alert('일곱 번째 행 버튼 클릭')">
+
+                    <td>진성훈</td>
+                    <td>백엔드</td>
+                    <td>2023.08.29</td>
+                    <td>서류 통과</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('여덟 번째 행 버튼 클릭')">
+
+                    <td>진성훈</td>
+                    <td>백엔드</td>
+                    <td>2023.08.29</td>
+                    <td>서류 통과</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                <tr class="notice-item" onclick="alert('아홉 번째 행 버튼 클릭')">
+
+                    <td>대한</td>
+                    <td>마케팅</td>
+                    <td>2023.08.29</td>
+                    <td>면접</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('열 번째 행 버튼 클릭')">
+
+                    <td>민국</td>
+                    <td>프론트엔드</td>
+                    <td>2023.08.29</td>
+                    <td>면접</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+                <tr class="notice-item" onclick="alert('열한 번째 행 버튼 클릭')">
+
+                    <td>만세</td>
+                    <td>회계</td>
+                    <td>2023.08.29</td>
+                    <td>최종합격</td>
+                    <td><button class="manage">열람</button>
+                        <button class="manage">합격</button>
+                        <button class="manage">불합격</button></td>
+                </tr>
+
+                
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+{{ >layout/footer}}

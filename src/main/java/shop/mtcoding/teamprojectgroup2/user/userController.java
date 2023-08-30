@@ -32,6 +32,11 @@ public class userController {
         return "/userBoard/joinForm";
     }
 
+    @GetMapping("/customerBoard")
+    public String customerBoard() {
+        return "/customerBoard/customerBoard";
+    }
+
     @GetMapping("/manageNotice")
     public String manageNotice() {
         return "/bizBoard/manageNotice";
@@ -45,19 +50,42 @@ public class userController {
     @GetMapping("/bizRegistration")
     public String Registration() {
         return "/bizBoard/bizRegistration";
-
     }
+
+    @GetMapping("/bizmain")
+    public String bizMain() {
+        return "/bizBoard/bizMain";
+    }
+
+    @GetMapping("/bizTrueMain")
+    public String bizTrueMain() {
+        return "/bizBoard/bizTrueMain";
+    }
+
 
     @GetMapping("/searchUser")
     public String searchUser() {
         return "/bizBoard/searchUser";
 
     }
-
     @GetMapping("/manageResume")
     public String manageResume() {
         return "/userBoard/manageResume";
+    }
 
+    @GetMapping("/customersubmitquestion")
+    public String question() {
+        return "/customerBoard/customersubmitQuestion";
+    }
+
+    @GetMapping("/userRevise")
+    public String userRevise() {
+        return "/userBoard/userRevise";
+    }
+
+    @GetMapping("/searchresult")
+    public String searchResult() {
+        return "/customerBoard/searchResult";
     }
 
 }
