@@ -62,6 +62,12 @@ public class userController {
         return "/bizBoard/bizTrueMain";
     }
 
+
+    @GetMapping("/searchUser")
+    public String searchUser() {
+        return "/bizBoard/searchUser";
+
+    }
     @GetMapping("/manageResume")
     public String manageResume() {
         return "/userBoard/manageResume";
@@ -81,4 +87,5 @@ public class userController {
     public String searchResult() {
         return "/customerBoard/searchResult";
     }
+
 }
