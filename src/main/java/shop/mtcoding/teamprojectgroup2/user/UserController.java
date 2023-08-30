@@ -10,7 +10,7 @@ public class UserController {
 
     // DI(의존성주입)
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     // 완료
     @GetMapping("/joinForm")
