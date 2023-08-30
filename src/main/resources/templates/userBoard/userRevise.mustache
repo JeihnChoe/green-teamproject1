@@ -1,0 +1,123 @@
+{{ >layout/head}}
+<link rel="stylesheet" href="/css/userBoard/userRevise.css">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-sm bg-white navbar-white ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand " href="#">wanted oneID</a>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav"></ul>
+            </div>
+            <button class="align-login" type="button">목록</button>
+            <button class="align-service" type="button">로그아웃</button>
+        </div>
+    </nav>
+</header>
+
+<body style="margin-top: 80px;">
+
+    <div class="main-container">
+
+        <div class="reviseHead">
+            <button style="border-color: transparent;">
+                <img src="/images/user/userLogin.jpg" class="icon-jpg">
+            </button>
+            <h3>최제인님, 환영해요.</h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="left-container">
+
+            <div class="hiring-notice">계정관리</div>
+            <br>
+            <h6>서비스에서 사용하는 내 계정 정보를 관리할 수 있습니다.</h6>
+            <div class="notice-list">
+                <div class="notice-email">
+                    이메일
+                </div>
+                <div class="notice-test">
+                    <div class="input-box" contenteditable="true">
+                        이메일을 입력해주세요.
+                    </div>
+                    <button type="button" class="mainBtn">
+                        입력
+                    </button>
+                </div>
+            </div>
+
+            <hr class="hr-notice">
+            <div class="notice-list">
+                <div class="notice-email">
+                    이름
+                </div>
+                <div class="notice-test">
+                    <div class="input-box" contenteditable="true">
+                        이름을 입력해주세요.
+                    </div>
+                    <button type="button" class="mainBtn">
+                        입력
+                    </button>
+                </div>
+            </div>
+            <hr class="hr-notice">
+            <div class="notice-list">
+                <div class="notice-email">
+                    휴대폰 번호
+                </div>
+                <div class="notice-test">
+                    <div class="input-box" contenteditable="true">
+                        휴대폰 번호를 입력해주세요.
+                    </div>
+                    <button type="button" class="mainBtn">
+                        입력
+                    </button>
+                </div>
+            </div>
+            <hr class="hr-notice">
+            <div class="notice-list">
+                <div class="notice-email">
+                    소셜 로그인 관리
+                </div>
+                <div class="notice-test">
+                    <div class="input-box" contenteditable="true">
+                        소셜 아이디를 입력해주세요.
+                    </div>
+                    <button type="button" class="mainBtn">
+                        입력
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="left-container">
+
+            <div class="hiring-notice">개인 정보 보호</div>
+            <br>
+            <h6>내 계정을 안전하게 보호하기 위한 정보를 관리할 수 있습니다.</h6>
+            <br>
+            <br>
+            <button class="notice-exit">회원탈퇴</button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    {{ >layout/footer}}
