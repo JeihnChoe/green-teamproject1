@@ -1,0 +1,138 @@
+{{ >layout/head}}
+<link rel="stylesheet" href="/css/bizBoard/bizRegistration.css">
+{{ >layout/header}}
+    <div>
+        <div class="textHead">
+            <button type="button" class="mainBtn">
+            </button>
+            <div>
+                채용공고 등록
+            </div>
+        </div>
+        <div class="textNotice">
+            <div class="marginController">
+                <div>직무/직군</div>
+
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        직무/직군
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" onclick="changeDropdownText('프론트')">프론트</a></li>
+                        <li><a class="dropdown-item" onclick="changeDropdownText('백엔드')">백엔드</a></li>
+                        <li><a class="dropdown-item" onclick="changeDropdownText('그린컴')">그린컴</a></li>
+                    </ul>
+                </div>
+                <div>
+                    공고 직무가 다를 경우 각각 등록 해야 합니다.
+                </div>
+
+                <div>경력</div>
+
+                <link rel="stylesheet" href="#">프리랜서 고용 서비스(링크)</link>
+
+                <div>
+                 <div>
+                        <div class="number-box">
+                            <input type="number" class="number-input" inputmode="numeric" id="startYear" disabled>
+                        </div>
+                        -
+                        <div class="number-box">
+                            <input type="number" class="number-input" inputmode="numeric" id="endYear" disabled>
+                        </div>
+                        년
+                        <input type="checkbox" name="cb" id="isNew" onclick="toggleNumberBoxes()" />
+                        신입
+                    </div>
+                </div>
+
+
+                <div>근무지</div>
+
+                <div>근무지 주소 입력 시 공고에 지도가 필요합니다.</div>
+
+                <div class="AddressGroups">
+                    <div class="input-box" contenteditable="true">
+                        근무지를 입력해주세요.
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div>담당자 명 입력하세요.</div>
+                <div class="AddressGroups">
+                    <div class="input-box" contenteditable="true">
+                        담당자명 입력해주세요.
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div>담당자 이메일 입력하세요.</div>
+                <div class="AddressGroups">
+                    <div class="input-box" contenteditable="true">
+                        담당자 이메일을 입력해주세요.
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div>담당자 연락처 입력하세요.</div>
+                <div class="AddressGroups">
+                    <div class="input-box" contenteditable="true">
+                        담당자 연락처 입력해주세요.
+                    </div>
+                    <div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="noticeMain"><!--공고 명과 공고 본문-->
+                <fieldset>
+                    <legend>공고문</legend>
+                    <br>
+                    <h4>공고 명</h4>
+                    <input type="text" />
+                    <br>
+                    <h8>직무명만 기재 가능하며 그 외 텍스트는 수정/삭제 후 승인</h8>
+                    <br>
+                    <br>
+                    <h4>공고 본문</h4>
+                    <textarea name="noticeText" cols="30" rows="10">
+
+                </textarea>
+                <button class="align-service" type="submit"  >등록하기</button>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+<script>
+
+
+
+
+
+
+    function toggleNumberBoxes() {
+    var startYearInput = document.getElementById("startYear");
+    var endYearInput = document.getElementById("endYear");
+    var isNewCheckbox = document.getElementById("isNew");
+
+    startYearInput.disabled = isNewCheckbox.checked;
+    endYearInput.disabled = isNewCheckbox.checked;
+
+    if (isNewCheckbox.checked) {
+        startYearInput.value = "";
+        endYearInput.value = "";
+    }
+}
+
+function changeDropdownText(selectedText) {
+    var dropdownButton = document.getElementById("dropdownMenuButton");
+    dropdownButton.innerText = selectedText;
+}
+</script>
+
+
+
+
+
+    {{ >layout/footer}}

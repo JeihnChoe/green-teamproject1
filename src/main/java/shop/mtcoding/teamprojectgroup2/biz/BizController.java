@@ -4,21 +4,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class BizController {
 
+
+
+//공고관리
     @GetMapping("/manageNotice")
     public String manageNotice() {
         return "/bizBoard/manageNotice";
     }
-
+//공고상세
     @GetMapping("/bizDetail")
     public String biz() {
 
         return "/bizBoard/bizDetail";
     }
 
-    @GetMapping("/bizRegistration")
-    public String Registration() {
-        return "/bizBoard/bizRegistration";
-    }
+
+
 
     @GetMapping("/bizMain")
     public String bizMain() {

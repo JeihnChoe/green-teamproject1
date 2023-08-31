@@ -60,7 +60,6 @@ public class UserController {
     }
 
     // 완료
-
     @GetMapping("/matchUp")
     public String matchUp() {
         return "/biz";
