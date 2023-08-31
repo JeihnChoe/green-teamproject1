@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    public void 회원가입() {
+    public void 유저회원가입() {
     }
 
-    public void 로그인() {
+    public void 유저로그인() {
     }
 
 }

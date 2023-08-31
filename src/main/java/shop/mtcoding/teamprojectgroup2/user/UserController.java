@@ -18,9 +18,9 @@ public class UserController {
         return "/userBoard/joinForm";
     }
 
-    @PostMapping("/join")
-    public void join() {
-        userService.회원가입();
+    @PostMapping("/userjoin")
+    public void userJoin() {
+        userService.유저회원가입();
     }
 
     // 완료
@@ -29,9 +29,9 @@ public class UserController {
         return "/userBoard/loginForm";
     }
 
-    @PostMapping("/login")
-    public void login() {
-        userService.로그인();
+    @PostMapping("/userlogin")
+    public void userLogin() {
+        userService.유저로그인();
     }
 
     // 완료

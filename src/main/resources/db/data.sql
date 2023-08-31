@@ -54,3 +54,28 @@ values('라이브커머스 PD','주요업무
 '경기 수원시 영통구 삼성로 129');
 
 
+-- apply_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into apply_tb(resume_id, notice_id, pass) values(1, 1, '대기중');
+insert into apply_tb(resume_id, notice_id, pass) values(2, 2, '대기중');
+insert into apply_tb(resume_id, notice_id, pass) values(3, 1, '불합격');
+insert into apply_tb(resume_id, notice_id, pass) values(4, 1, '합격');
+
+-- bookmark_tb 더미데이터 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+insert into bookmark_tb(biz_id, resume_id) values(1,2);
+insert into bookmark_tb(biz_id, resume_id) values(2,3);
+insert into bookmark_tb(biz_id, resume_id) values(3,1);
+
+-- like_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into like_tb(user_id, notice_id) values(1, 1);
+insert into like_tb(user_id, notice_id) values(1, 3);
+insert into like_tb(user_id, notice_id) values(2, 2);
+insert into like_tb(user_id, notice_id) values(3, 1);
+insert into like_tb(user_id, notice_id) values(3, 3);
+
+--tech_tb 더미데이터 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+insert into tech_tb(techname) values ('자바');
+
+
+ 
