@@ -1,7 +1,9 @@
 package shop.mtcoding.teamprojectgroup2.biz;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@Controller
 public class BizController {
 
     @GetMapping("/manageNotice")

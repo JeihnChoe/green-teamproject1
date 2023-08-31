@@ -38,7 +38,7 @@ public class User {
     @Column(nullable = false, length = 10000)
     String school;
 
-    @Column(nullable = false, length = 10000)
+    @Column(length = 10000)
     String career;
 
     @Column(nullable = false, length = 10000)
@@ -46,6 +46,12 @@ public class User {
 
     @Column(nullable = false, length = 10000)
     String birth;
+    @Column(nullable = false, length = 10000)
+    String birth;
+    @Column(nullable = false, length = 10000)
+    String birth;
+
+    // private Tech tech;
 
     @Builder
     public User(Integer id, String loginId, String password, String email, String username, String address,

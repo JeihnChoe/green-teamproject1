@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import shop.mtcoding.teamprojectgroup2.resume.ResumeRequestDTO;
+
 @Controller
 public class UserController {
 
@@ -48,9 +50,9 @@ public class UserController {
     }
 
     // 완료
-    @GetMapping("/writeResume")
-    public String writeResume() {
-        return "/userBoard/writeResume";
+    @GetMapping("/writeResumeForm")
+    public String writeResumeForm() {
+        return "/userBoard/writeResumeForm";
     }
 
     // 완료
