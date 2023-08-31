@@ -1,6 +1,7 @@
 package shop.mtcoding.teamprojectgroup2.notice;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -13,7 +14,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "notice_db")
+@Table(name = "notice_tb")
+@Entity
 public class Notice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +28,6 @@ public class Notice {
     String content;
 
     @Column(nullable = false, length = 10000)
-    String bizId;
+    Integer bizId;
 
 }
