@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import lombok.Getter;
 import lombok.Setter;
+import shop.mtcoding.teamprojectgroup2.biz.Biz;
 
 @Component
 public class NoticeRequestDTO {
@@ -15,5 +16,15 @@ public class NoticeRequestDTO {
         private String managerEmail;
         private String managerName;
         private String managerTel;
+        private String jobGroup;
+        private String map;
+        private String career;
+
+
+        
+
     }
+    
+    
+
 }

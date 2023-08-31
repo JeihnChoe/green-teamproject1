@@ -6,6 +6,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -37,26 +38,25 @@ public class Notice {
     @ManyToOne(fetch = FetchType.LAZY)
     Biz biz;
 
+    @Column(length = 10000)
+    String jobGroup;
 
+    @Column(length = 10000)
+    String career;
 
-    @Column(nullable = false, length = 10000)
-    String jobgroup;
-
-    @Column(nullable = false, length = 10000)
-    Integer career;
-
-    @Column(nullable = false, length = 10000)
+    @Column(length = 10000)
     String map;
 
     @Builder
-    public Notice(Integer id, String title, String content, Biz biz, String jobgroup, Integer career, String map) {
+    public Notice(Integer id, String title, String content, Biz biz, String jobGroup, String career, String map) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.biz = biz;
-        this.jobgroup = jobgroup;
+        this.jobGroup = jobGroup;
         this.career = career;
         this.map = map;
+
     }
 
   

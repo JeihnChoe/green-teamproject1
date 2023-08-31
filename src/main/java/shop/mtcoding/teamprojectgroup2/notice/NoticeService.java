@@ -27,6 +27,9 @@ public class NoticeService {
         Notice notice =  Notice.builder()
         .title(saveDTO.getTitle())
         .content(saveDTO.getContent())
+        .career(saveDTO.getCareer())
+        .jobGroup(saveDTO.getJobGroup())
+        .map(saveDTO.getMap())
         .biz(biz)
         .build();
 

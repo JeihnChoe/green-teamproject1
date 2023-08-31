@@ -18,10 +18,11 @@ public class NoticeController {
         return "/bizBoard/bizRegistrationForm";
     }
 
-    @PostMapping("/bizRegistration")
+    @PostMapping("/notice/bizRegistration")
     public String bizRegistration(NoticeRequestDTO.SaveDTO saveDTO){
-        noticeService.공고등록(saveDTO,1);
-        return "redirect: /";
+     noticeService.공고등록(saveDTO,1);
+     
+        return "redirect:/";
 
       
         
