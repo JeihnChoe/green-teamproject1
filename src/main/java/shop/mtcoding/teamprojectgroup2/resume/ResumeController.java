@@ -4,6 +4,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import shop.mtcoding.teamprojectgroup2.user.User;
@@ -17,11 +18,13 @@ public class ResumeController {
     @Autowired
     private HttpSession session;
 
-    @PostMapping("/writeResume")
+    // 완료
+    @PostMapping("/resume/writeResume")
     public String writeResume(ResumeRequestDTO.SaveDTO saveDTO) {
+        System.out.println("테스트: " + saveDTO.getCareer());
         User sessionUser = (User) session.getAttribute("sessionUser");
-        resumeService.이력서작성(saveDTO, sessionUser.getId());
-        return "";
+        resumeService.이력서작성(saveDTO, 1);
+        return "/userBoard/manageResumeForm";
     }
 
 }

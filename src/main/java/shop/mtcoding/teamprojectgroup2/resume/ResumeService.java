@@ -16,12 +16,19 @@ public class ResumeService {
     private ResumeRepository resumeRepository;
 
     @Transactional
-    public void 이력서작성(SaveDTO saveDTO, Integer sessionId) {
-        User user = User.builder().id(sessionId).build();
+    public void 이력서작성(ResumeRequestDTO.SaveDTO saveDTO, Integer sessionId) {
+        User user = User.builder().id(1).build();
         Resume resume = Resume.builder()
                 .title(saveDTO.getTitle())
                 .content(saveDTO.getContent())
                 .user(user)
+                .career(saveDTO.getCareer())
+                .education(saveDTO.getEducation())
+                .school(saveDTO.getSchool())
+                .etc(saveDTO.getEtc())
+                .link1(saveDTO.getLink1())
+                .link2(saveDTO.getLink2())
+                .link3(saveDTO.getLink3())
                 .open(false)
                 .build();
         resumeRepository.save(resume);

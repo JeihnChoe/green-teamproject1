@@ -1,13 +1,16 @@
 package shop.mtcoding.teamprojectgroup2.relationEntities;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.Builder;
 import lombok.Data;
+import shop.mtcoding.teamprojectgroup2.user.User;
 
 @Data
 @Entity
@@ -19,6 +22,9 @@ public class Tech {
     Integer id;
 
     String techname;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    User user;
 
     @Builder
     public Tech(Integer id, String techname) {

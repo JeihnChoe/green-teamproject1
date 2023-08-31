@@ -56,13 +56,12 @@ public class UserController {
     }
 
     // 완료
-    @GetMapping("/manageResume")
+    @GetMapping("/manageResumeForm")
     public String manageResume() {
-        return "/userBoard/manageResume";
+        return "/userBoard/manageResumeForm";
     }
 
     // 완료
-
     @GetMapping("/matchUp")
     public String matchUp() {
         return "/biz";

@@ -1,7 +1,6 @@
 package shop.mtcoding.teamprojectgroup2.resume;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 public interface ResumeRepository extends JpaRepository<Resume, Integer> {
 

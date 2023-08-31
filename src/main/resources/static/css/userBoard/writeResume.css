@@ -11,6 +11,8 @@
 
 }
 
+
+
 /* .name {
     font-size: 20px;
 } */
@@ -59,7 +61,7 @@ ul li {
 
 .plus-button {
     padding: 5px 10px;
-    border: none;
+    border: 1px solid blue;
     background: none;
     font-size: 20px;
     color: blue;

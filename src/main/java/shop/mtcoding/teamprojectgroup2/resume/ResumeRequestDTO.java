@@ -11,6 +11,13 @@ public class ResumeRequestDTO {
         private String title;
         private String content;
         private String career;
+        private String education;
+        private String school;
+        // private Tech tech;
+        private String etc;
+        private String link1;
+        private String link2;
+        private String link3;
 
     }
 }
