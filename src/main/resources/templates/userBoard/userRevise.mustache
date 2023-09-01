@@ -1,24 +1,5 @@
-{{ >layout/head}}
 <link rel="stylesheet" href="/css/userBoard/userRevise.css">
-</head>
 
-<header>
-    <nav class="navbar navbar-expand-sm bg-white navbar-white ">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand " href="/">wanted oneID</a>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav"></ul>
-            </div>
-            <button class="align-login" type="button">목록</button>
-            <a href="/">
-                <button class="align-service" type="button">로그아웃</button>
-            </a>
-        </div>
-    </nav>
-</header>
 
 <body style="margin-top: 80px;">
 
@@ -28,27 +9,26 @@
             <button style="border-color: transparent;">
                 <img src="/images/user/userLogin.jpg" class="icon-jpg">
             </button>
+            <br>
+            <input type="file" name="id" />
             <h3>최제인님, 환영해요.</h3>
         </div>
         <br>
         <br>
         <br>
         <div class="left-container">
-
-            <div class="hiring-notice">계정관리</div>
-            <br>
-            <h6>서비스에서 사용하는 내 계정 정보를 관리할 수 있습니다.</h6>
+            <div class="revise">
+                <div class="hiring-notice">계정관리</div>
+                <br>
+                <h6>서비스에서 사용하는 내 계정 정보를 관리할 수 있습니다.</h6>
+            </div>
             <div class="notice-list">
                 <div class="notice-email">
                     이메일
                 </div>
                 <div class="notice-test">
-                    <div class="input-box" contenteditable="true">
-                        이메일을 입력해주세요.
-                    </div>
-                    <button type="button" class="mainBtn">
-                        입력
-                    </button>
+                    <input class="input-box" contenteditable="true" placeholder="이메일을 입력해주세요.">
+                    </input>
                 </div>
             </div>
 
@@ -58,12 +38,8 @@
                     이름
                 </div>
                 <div class="notice-test">
-                    <div class="input-box" contenteditable="true">
-                        이름을 입력해주세요.
-                    </div>
-                    <button type="button" class="mainBtn">
-                        입력
-                    </button>
+                    <input class="input-box" contenteditable="true" placeholder="최제인">
+                    </input>
                 </div>
             </div>
             <hr class="hr-notice">
@@ -72,27 +48,35 @@
                     휴대폰 번호
                 </div>
                 <div class="notice-test">
-                    <div class="input-box" contenteditable="true">
-                        휴대폰 번호를 입력해주세요.
-                    </div>
-                    <button type="button" class="mainBtn">
-                        입력
-                    </button>
+                    <input class="input-box" contenteditable="true" placeholder="01093208540">
+                    </input>
                 </div>
             </div>
             <hr class="hr-notice">
             <div class="notice-list">
                 <div class="notice-email">
-                    소셜 로그인 관리
+                    주소
                 </div>
                 <div class="notice-test">
-                    <div class="input-box" contenteditable="true">
-                        소셜 아이디를 입력해주세요.
-                    </div>
-                    <button type="button" class="mainBtn">
-                        입력
-                    </button>
+                    <input class="input-box" contenteditable="true" placeholder="부산 진구 중앙대로 688, 305호">
+                    </input>
                 </div>
+            </div>
+            <hr class="hr-notice">
+            <div class="notice-list">
+                <div class="notice-email">
+                    생년월일
+                </div>
+                <div class="notice-test">
+                    <input class="input-box" contenteditable="true" placeholder="1988.08.09">
+                    </input>
+                </div>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <a href="/userRevise">
+                    <button class="notice-exit">수정완료</button>
+                </a>
             </div>
 
         </div>
@@ -100,16 +84,19 @@
         <br>
         <br>
         <div class="left-container">
-
-            <div class="hiring-notice">개인 정보 보호</div>
-            <br>
-            <h6>내 계정을 안전하게 보호하기 위한 정보를 관리할 수 있습니다.</h6>
-            <br>
-            <br>
-            <a href="/loginForm">
-                <button class="notice-exit">회원탈퇴</button>
-            </a>
-
+            <div class="revise-down">
+                <div class="hiring-notice">개인 정보 보호</div>
+                <br>
+                <h6>내 계정을 안전하게 보호하기 위한 정보를 관리할 수 있습니다.</h6>
+            </div>
+                <br>
+                <br>
+                <div style="display: flex; justify-content: center;">
+                <a href="/loginForm">
+                    <button class="notice-exit">회원탈퇴</button>
+                </a>
+          
+            </div>
         </div>
 
 
@@ -122,5 +109,3 @@
 
 
 
-
-    {{ >layout/footer}}

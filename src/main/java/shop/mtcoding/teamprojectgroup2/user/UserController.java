@@ -66,4 +66,9 @@ public class UserController {
 
     }
 
+    @GetMapping("/userRevise")
+    public String userRevise(){
+        return "/userBoard/userRevise";
+    }
+
 }

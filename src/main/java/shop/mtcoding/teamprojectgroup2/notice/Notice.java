@@ -6,7 +6,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -47,8 +46,13 @@ public class Notice {
     @Column(length = 10000)
     String map;
 
+    @Column(length = 10000)
+    String deadLine;
+
+
+
     @Builder
-    public Notice(Integer id, String title, String content, Biz biz, String jobGroup, String career, String map) {
+    public Notice(Integer id, String title, String content, Biz biz, String jobGroup, String career, String map, String deadLine) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -56,6 +60,7 @@ public class Notice {
         this.jobGroup = jobGroup;
         this.career = career;
         this.map = map;
+        this.deadLine = deadLine;
 
     }
 

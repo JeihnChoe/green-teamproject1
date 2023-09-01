@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 20px; /* 위 아래 여백 설정 */
-    max-width: 50%; /* 최대 너비를 100%로 설정 */
+    max-width: 30%; /* 최대 너비를 100%로 설정 */
     margin: 50px auto;
     margin-top: 0px;
     
@@ -21,7 +21,9 @@
     padding: 10px;
 }
 .hiring-notice {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -45,21 +47,27 @@
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: transparent;
+    
 }
 .notice-email{
 
     text-align: left;
     border: none;
     background-color: transparent;
+    margin-left: 50px;
   
+}
+.revise{
+    margin-left: 50px;
 }
 .input-box {
     width: 280px;
     height: 30px;
-    border: 1px solid #ccc;
+    border: transparent;
     padding: 5px;
     font-size: 14px;
-    color: #aaa;
+    color: black;
+    margin-right: 200px;
     
   }
   .notice-test{
@@ -72,6 +80,9 @@
     background-color: white;
 border: 1px solid gray;
 
+}
+.revise-down{
+    margin-left: 50px;
 }
 
 

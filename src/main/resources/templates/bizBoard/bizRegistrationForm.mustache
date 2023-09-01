@@ -1,123 +1,128 @@
 {{ >layout/head}}
 <link rel="stylesheet" href="/css/bizBoard/bizRegistration.css">
 {{ >layout/header}}
-    <form action="notice/bizRegistration" method="post">
-        <div class="textHead">
-            <button type="button" class="mainBtn">
-            </button>
-            <div>
-                채용공고 등록
-            </div>
+<form action="notice/bizRegistration" method="post">
+    <div class="textHead">
+        <button type="button" class="mainBtn">
+        </button>
+        <div>
+            채용공고 등록
         </div>
-        <div class="textNotice">
-            <div class="marginController">
-                <div>직무/직군</div>
+    </div>
+    <div class="textNotice">
+        <div class="marginController">
+            <div>직무/직군</div>
 
-                <select class="plus-button" data-bs-toggle="dropdown" name="jobGroup" values="직무 선택">직무 선택</button>
+            <select class="plus-button" data-bs-toggle="dropdown" name="jobGroup" values="직무 선택">직무 선택</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <option value="백엔드">백엔드</option>
+                    </li>
+                    <li>
+                        <option value="프론트엔드">프론트엔드</option>
+                    </li>
+                    <li>
+                        <option value="홍보">홍보</option>
+                    </li>
+                    <li>
+                        <option value="기획">기획</option>
+                    </li>
+                </ul>
+            </select>
+
+            <div>
+                공고 직무가 다를 경우 각각 등록 해야 합니다.
+            </div>
+
+            <div>경력</div>
+
+            <link rel="stylesheet" href="#">프리랜서 고용 서비스(링크)</link>
+
+            <div>
+                <select class="plus-button" data-bs-toggle="dropdown" name="career" values="경력 선택">경력 선택</button>
                     <ul class="dropdown-menu">
                         <li>
-                            <option value="백엔드">백엔드</option>
+                            <option value="신입">신입</option>
                         </li>
                         <li>
-                            <option value="프론트엔드">프론트엔드</option>
+                            <option value="1년">1</option>
                         </li>
                         <li>
-                            <option value="홍보">홍보</option>
+                            <option value="3년">3</option>
                         </li>
                         <li>
-                            <option value="기획">기획</option>
+                            <option value="5년">5</option>
                         </li>
                     </ul>
                 </select>
-                
-                <div>
-                    공고 직무가 다를 경우 각각 등록 해야 합니다.
-                </div>
-
-                <div>경력</div>
-
-                <link rel="stylesheet" href="#">프리랜서 고용 서비스(링크)</link>
-
-                <div>
-                    <select class="plus-button" data-bs-toggle="dropdown" name="career" values="경력 선택">경력 선택</button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <option value="신입">신입</option>
-                            </li>
-                            <li>
-                                <option value="1년">1</option>
-                            </li>
-                            <li>
-                                <option value="3년">3</option>
-                            </li>
-                            <li>
-                                <option value="5년">5</option>
-                            </li>
-                        </ul>
-                    </select>
-                </div>
-
-
-                <div>근무지</div>
-
-                <div>근무지 주소 입력 시 공고에 지도가 필요합니다.</div>
-
-                <div class="AddressGroups">
-                    <input class="input-box" contenteditable="true" name="map">
-                        근무지를 입력해주세요.
-                    </input>
-                    <div>
-                    </div>
-                </div>
-                <div>담당자 명 입력하세요.</div>
-                <div class="AddressGroups">
-                    <div class="input-box" contenteditable="true" name="managerName">
-                        담당자명 입력해주세요.
-                    </div>
-                    <div>
-                    </div>
-                </div>
-                <div>담당자 이메일 입력하세요.</div>
-                <div class="AddressGroups">
-                    <div class="input-box" contenteditable="true" name="managerEmail">
-                        담당자 이메일을 입력해주세요.
-                    </div>
-                    <div>
-                    </div>
-                </div>
-                <div>담당자 연락처 입력하세요.</div>
-                <div class="AddressGroups">
-                    <div class="input-box" contenteditable="true" name="managerTel">
-                        담당자 연락처 입력해주세요.
-                    </div>
-                    <div>
-                    </div>
-                </div>
-
             </div>
-            <div class="noticeMain"><!--공고 명과 공고 본문-->
-                <fieldset>
 
-                    <legend>공고문</legend>
-                    <br>
-                    <h4>공고 명</h4>
-                    <input type="text" name="title"/>
-                    <br>
-                    <h8>직무명만 기재 가능하며 그 외 텍스트는 수정/삭제 후 승인</h8>
-                    <br>
-                    <br>
-                    <h4>공고 본문</h4>
-                    <textarea name="content" cols="30" rows="10" name="content">
 
-                </textarea>
-               
-                <button  type="submit" class="align-service">등록하기</button>
+            <div>근무지</div>
 
-                </fieldset>
+            <div>근무지 주소 입력 시 공고에 지도가 필요합니다.</div>
+
+            <div class="AddressGroups">
+                <input class="input-box" contenteditable="true" name="map" placeholder="근무지를 입력해주세요.">
+                </input>
+                <div>
+                </div>
             </div>
+            <div>담당자 명 입력하세요.</div>
+            <div class="AddressGroups">
+                <input class="input-box" contenteditable="true" name="managerName" placeholder="담당자명 입력주세요.">
+                </input>
+                <div>
+                </div>
+            </div>
+            <div>담당자 이메일 입력하세요.</div>
+            <div class="AddressGroups">
+                <input class="input-box" contenteditable="true" name="managerEmail" placeholder="담당자 이메일을 입력해주세요.">
+                </input>
+                <div>
+                </div>
+            </div>
+            <div>담당자 연락처 입력하세요.</div>
+            <div class="AddressGroups">
+                <input class="input-box" contenteditable="true" name="managerTel" placeholder="담당자 연락처 입력해주세요.">
+                </input>
+                <div>
+                </div>
+            </div>
+            <div>마감일자 입력하세요.</div>
+            <div class="AddressGroups">
+                <input class="input-box" contenteditable="true" name="deadLine" placeholder="00-00-00">
+                </input>
+                <div>
+                </div>
+            </div>
+         
+
         </div>
 
-    </form>
+        <div class="noticeMain"><!--공고 명과 공고 본문-->
+            <fieldset>
+
+                <legend>공고문</legend>
+                <br>
+                <h4>공고 명</h4>
+                <input type="text" name="title" />
+                <br>
+                <h8>직무명만 기재 가능하며 그 외 텍스트는 수정/삭제 후 승인</h8>
+                <br>
+                <br>
+                <h4>공고 본문</h4>
+                <textarea name="content" cols="30" rows="10" name="content">
+
+                </textarea>
+
+                <button type="submit" class="align-service">등록하기</button>
+
+            </fieldset>
+        </div>as5
+    </div>
+
+</form>
 <script>
 
 
@@ -126,18 +131,18 @@
 
 
     function toggleNumberBoxes() {
-    var startYearInput = document.getElementById("startYear");
-    var endYearInput = document.getElementById("endYear");
-    var isNewCheckbox = document.getElementById("isNew");
+        var startYearInput = document.getElementById("startYear");
+        var endYearInput = document.getElementById("endYear");
+        var isNewCheckbox = document.getElementById("isNew");
 
-    startYearInput.disabled = isNewCheckbox.checked;
-    endYearInput.disabled = isNewCheckbox.checked;
+        startYearInput.disabled = isNewCheckbox.checked;
+        endYearInput.disabled = isNewCheckbox.checked;
 
-    if (isNewCheckbox.checked) {
-        startYearInput.value = "";
-        endYearInput.value = "";
+        if (isNewCheckbox.checked) {
+            startYearInput.value = "";
+            endYearInput.value = "";
+        }
     }
-}
 
 </script>
 
@@ -145,4 +150,4 @@
 
 
 
-    {{ >layout/footer}}
+{{ >layout/footer}}

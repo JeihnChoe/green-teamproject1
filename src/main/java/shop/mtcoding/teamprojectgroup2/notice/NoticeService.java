@@ -1,6 +1,10 @@
 package shop.mtcoding.teamprojectgroup2.notice;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,9 +34,18 @@ public class NoticeService {
         .career(saveDTO.getCareer())
         .jobGroup(saveDTO.getJobGroup())
         .map(saveDTO.getMap())
+        .deadLine(saveDTO.getDeadLine())
         .biz(biz)
         .build();
 
         noticeRepository.save(notice);
     }
+
+    
+    // public Page<Notice> 공고목록보기(Integer page) {
+    //     Pageable pageable = PageRequest.of(page, 10, Sort.Direction.DESC, "id");
+    //     return noticeRepository.findAll(pageable);
+    // }
+
+
 }
