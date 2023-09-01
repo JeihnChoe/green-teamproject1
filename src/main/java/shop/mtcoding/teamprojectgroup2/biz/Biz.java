@@ -45,11 +45,11 @@ public class Biz {
   String address;
 
   @Column(nullable = true, length = 10000)
-  String bizInfo;
+  String bookmark;
 
   @Builder
   public Biz(Integer id, String loginId, String password, String bizname, String managerName, String managerTel,
-      String managerEmail, String address, String bizInfo) {
+      String managerEmail, String address, String bookmark) {
     this.id = id;
     this.loginId = loginId;
     this.password = password;
@@ -58,9 +58,7 @@ public class Biz {
     this.managerTel = managerTel;
     this.managerEmail = managerEmail;
     this.address = address;
-    this.bizInfo = bizInfo;
+    this.bookmark = bookmark;
   }
-
-  
 
 }

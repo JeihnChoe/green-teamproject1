@@ -28,45 +28,49 @@ public class Notice {
     Integer id;
 
     @Column(nullable = false, length = 10000)
-    String title;
+    boolean open;
 
     @Column(nullable = false, length = 10000)
-    String content;
+    String semiTitle;
 
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
-    Biz biz;
+    @Column(nullable = false, length = 10000)
+    String semiContent;
+
+    @Column(nullable = false, length = 10000)
+    String bizImg;
+
+    @Column(nullable = false, length = 10000)
+    String mainTitle;
 
     @Column(length = 10000)
-    String jobGroup;
+    String bizInfo;
+
+    @Column(nullable = false, length = 10000)
+    String bizName;
+
+    @Column(nullable = false, length = 10000)
+    String bizAddress;
 
     @Column(length = 10000)
     String career;
 
     @Column(length = 10000)
-    String map;
-
-    @Column(length = 10000)
     String deadLine;
 
-
-
     @Builder
-    public Notice(Integer id, String title, String content, Biz biz, String jobGroup, String career, String map, String deadLine) {
+    public Notice(Integer id, boolean open, String semiTitle, String semiContent, String bizImg, String mainTitle,
+            String bizInfo, String bizName, String bizAddress, String career, String deadLine) {
         this.id = id;
-        this.title = title;
-        this.content = content;
-        this.biz = biz;
-        this.jobGroup = jobGroup;
+        this.open = open;
+        this.semiTitle = semiTitle;
+        this.semiContent = semiContent;
+        this.bizImg = bizImg;
+        this.mainTitle = mainTitle;
+        this.bizInfo = bizInfo;
+        this.bizName = bizName;
+        this.bizAddress = bizAddress;
         this.career = career;
-        this.map = map;
         this.deadLine = deadLine;
-
     }
 
-  
-
-
-    
-    
 }
