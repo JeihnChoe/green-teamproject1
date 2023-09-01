@@ -11,6 +11,32 @@ insert into resume_tb(title, content, user_id, school, education, career, open, 
 insert into resume_tb(title, content, user_id, school, education, career, open, etc, link1, link2, link3) values('경력자로 부딪히자!', '안녕하십니까, 저는 대학교를 다니진 않았지만, 실무 경험이 있는 사람입니다. 대학 졸업생들보다 3년이나 실무로 회사에서 경험한 제가 낫지 않을까요?', 3, '대학교 졸업','동의대학교 컴퓨터공학과', '신입', true, '어쨌든 일했음', '네이버블로그.com', 'github.com', '노션.com');
 
 
+-- tech_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into tech_tb(techname) values('Python');
+insert into tech_tb(techname) values('Spring Framework');
+insert into tech_tb(techname) values('AWS');
+insert into tech_tb(techname) values('Git');
+insert into tech_tb(techname) values('IOS');
+insert into tech_tb(techname) values('HTML');
+insert into tech_tb(techname) values('JAVA');
+insert into tech_tb(techname) values('JavaScript');
+insert into tech_tb(techname) values('MySQL');
+insert into tech_tb(techname) values('SQL');
+insert into tech_tb(techname) values('Linux');
+insert into tech_tb(techname) values('Android');
+insert into tech_tb(techname) values('Kotlin');
+insert into tech_tb(techname) values('C/C++');
+insert into tech_tb(techname) values('React');
+insert into tech_tb(techname) values('Docker');
+insert into tech_tb(techname) values('JPA');
+insert into tech_tb(techname) values('C#');
+
+-- relation_techs_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into relation_techs_tb(user_id, resume_id, biz_id, notice_id, tech_id) values(1, 1, 1, 1, 1);
+insert into relation_techs_tb(user_id, resume_id, biz_id, notice_id, tech_id) values(3, 3, 2, 2, 1);
+insert into relation_techs_tb(user_id, resume_id, biz_id, notice_id, tech_id) values(1, null, null, 3, 2);
+
+
 -- biz_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 insert into biz_tb(login_id, password, bizname, address, biz_info, manager_name, manager_tel, manager_email) 

@@ -1,4 +1,4 @@
-package shop.mtcoding.teamprojectgroup2.relationEntities;
+package shop.mtcoding.teamprojectgroup2.tech;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,9 +22,6 @@ public class Tech {
     Integer id;
 
     String techname;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    User user;
 
     @Builder
     public Tech(Integer id, String techname) {

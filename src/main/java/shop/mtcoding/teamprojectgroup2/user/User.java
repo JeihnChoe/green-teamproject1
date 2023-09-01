@@ -1,16 +1,19 @@
 package shop.mtcoding.teamprojectgroup2.user;
 
+import java.security.Timestamp;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import shop.mtcoding.teamprojectgroup2.relationEntities.Tech;
-
-import org.hibernate.annotations.CreationTimestamp;
-
-import javax.persistence.*;
-import java.security.Timestamp;
-import java.util.List;
+import shop.mtcoding.teamprojectgroup2.relationTechs.RelationTechs;
 
 @Getter
 @Setter
@@ -39,24 +42,33 @@ public class User {
     String address;
 
     @Column(length = 10000)
+    String addressDetail;
+
+    @Column(length = 10000)
     String tel;
 
     @Column(length = 10000)
     String birth;
 
-    // @ManyToOne(fetch = FetchType.LAZY)
-    // List<Tech> tech; // N:N
+    Timestamp createdAt;
+
+    RelationTechs relationTechs;
 
     @Builder
     public User(Integer id, String loginId, String password, String email, String username, String address,
-            String school, String career, String tel, String birth, String tech, String link) {
+            String addressDetail,
+            String tel, String birth, Timestamp createdAt, RelationTechs relationTechs) {
         this.id = id;
         this.loginId = loginId;
         this.password = password;
         this.email = email;
         this.username = username;
         this.address = address;
+        this.addressDetail = addressDetail;
         this.tel = tel;
         this.birth = birth;
+        this.createdAt = createdAt;
+        this.relationTechs = relationTechs;
+
     }
 }

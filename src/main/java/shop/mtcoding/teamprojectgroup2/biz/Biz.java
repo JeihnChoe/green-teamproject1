@@ -1,5 +1,7 @@
 package shop.mtcoding.teamprojectgroup2.biz;
 
+import java.security.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +12,7 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import shop.mtcoding.teamprojectgroup2.relationTechs.RelationTechs;
 
 @Getter
 @Setter
@@ -45,5 +48,9 @@ public class Biz {
 
   @Column(nullable = true, length = 10000)
   String bizInfo;
+
+  Timestamp createdAt;
+
+  RelationTechs relationTechs;
 
 }

@@ -1,11 +1,16 @@
 package shop.mtcoding.teamprojectgroup2.user;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import shop.mtcoding.teamprojectgroup2.resume.Resume;
 import shop.mtcoding.teamprojectgroup2.resume.ResumeRequestDTO;
+import shop.mtcoding.teamprojectgroup2.resume.ResumeService;
 
 @Controller
 public class UserController {
@@ -13,6 +18,9 @@ public class UserController {
     // DI(의존성주입)
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private HttpSession session;
 
     // 완료
     @GetMapping("/joinForm")
@@ -57,7 +65,10 @@ public class UserController {
 
     // 완료
     @GetMapping("/manageResumeForm")
-    public String manageResume() {
+    public String manageResumeForm(HttpServletRequest request) {
+        User sessionUser = (User) session.getAttribute("sessionUser");
+        Resume resume = ResumeService.이력서목록보기(sessionUser.getId());
+        request.setAttribute("resume", resume);
         return "/userBoard/manageResumeForm";
     }
 
