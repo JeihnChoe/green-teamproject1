@@ -79,8 +79,6 @@ public class Resume {
 
     Timestamp createdAt;
 
-    RelationTechs relationTechs;
-
     @Builder
     public Resume(Integer id, String title, String semiContent, String content, String career, User user, String school,
             String education, String career1, String career_period1, String career2, String career_period2,
@@ -106,7 +104,6 @@ public class Resume {
         this.link2 = link2;
         this.link3 = link3;
         this.createdAt = createdAt;
-        this.relationTechs = relationTechs;
     }
 
 }

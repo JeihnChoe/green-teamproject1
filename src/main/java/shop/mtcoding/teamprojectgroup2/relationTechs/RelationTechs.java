@@ -1,7 +1,5 @@
 package shop.mtcoding.teamprojectgroup2.relationTechs;
 
-import java.sql.Timestamp;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -10,11 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.mysql.cj.protocol.x.Notice;
-
 import lombok.Builder;
 import lombok.Data;
 import shop.mtcoding.teamprojectgroup2.biz.Biz;
+import shop.mtcoding.teamprojectgroup2.notice.Notice;
 import shop.mtcoding.teamprojectgroup2.resume.Resume;
 import shop.mtcoding.teamprojectgroup2.tech.Tech;
 import shop.mtcoding.teamprojectgroup2.user.User;
@@ -36,6 +33,7 @@ public class RelationTechs {
     @ManyToOne(fetch = FetchType.LAZY)
     Biz biz;
 
+    // @JsonIgnoreProperties({ "title", "content", "bizId" })
     @ManyToOne(fetch = FetchType.LAZY)
     Notice notice;
 

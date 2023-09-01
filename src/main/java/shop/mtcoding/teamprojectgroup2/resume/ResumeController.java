@@ -21,7 +21,6 @@ public class ResumeController {
     // 완료
     @PostMapping("/resume/writeResume")
     public String writeResume(ResumeRequestDTO.SaveDTO saveDTO) {
-        System.out.println("테스트: " + saveDTO.getCareer());
         User sessionUser = (User) session.getAttribute("sessionUser");
         resumeService.이력서작성(saveDTO, 1);
         return "/userBoard/manageResumeForm";

@@ -52,5 +52,4 @@ public class Biz {
   Timestamp createdAt;
 
   RelationTechs relationTechs;
-
 }

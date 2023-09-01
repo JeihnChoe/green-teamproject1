@@ -52,8 +52,6 @@ public class User {
 
     Timestamp createdAt;
 
-    RelationTechs relationTechs;
-
     @Builder
     public User(Integer id, String loginId, String password, String email, String username, String address,
             String addressDetail,
@@ -68,7 +66,6 @@ public class User {
         this.tel = tel;
         this.birth = birth;
         this.createdAt = createdAt;
-        this.relationTechs = relationTechs;
 
     }
 }
