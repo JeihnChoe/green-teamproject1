@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,22 +29,36 @@ public class Biz {
   @Column(nullable = false, length = 10000)
   String password;
 
-  @Column(nullable = false, length = 10000)
+  @Column(length = 10000)
   String bizname;
 
-  @Column(nullable = false, length = 10000)
+  @Column(length = 10000)
   String managerName;
 
-  @Column(nullable = false, length = 10000)
+  @Column(length = 10000)
   String managerTel;
 
-  @Column(nullable = false, length = 10000)
+  @Column(length = 10000)
   String managerEmail;
 
-  @Column(nullable = true, length = 10000)
+  @Column(length = 10000)
   String address;
 
-  @Column(nullable = true, length = 10000)
+  @Column(length = 10000)
   String bizInfo;
 
+  @Builder
+  public Biz(Integer id, String loginId, String password, String bizname, String managerName, String managerTel,
+      String managerEmail, String address, String bizInfo) {
+    this.id = id;
+    this.loginId = loginId;
+    this.password = password;
+    this.bizname = bizname;
+    this.managerName = managerName;
+    this.managerTel = managerTel;
+    this.managerEmail = managerEmail;
+    this.address = address;
+    this.bizInfo = bizInfo;
+
+  }
 }
