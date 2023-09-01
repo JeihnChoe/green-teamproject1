@@ -1,14 +1,14 @@
 -- user_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-insert into user_tb(login_id, password, email, username, address, school, career, tel, birth) values('ssar', '1234', 'ssar@nate.com', '김쌀', '부산광역시 부산진구 부전동', '동의대학교 광고홍보학과 졸업', '신입', '010-1234-5677', 1997);
-insert into user_tb(login_id, password, email, username, address, school, career, tel, birth) values('cos', 'qwer', 'cos@nate.com', '김코스', '서울특별시 강남구', '서울대학교 컴퓨터공학과 재학중', '신입', '010-1111-2222', 1995);
-insert into user_tb(login_id, password, email, username, address, school, career, tel, birth) values('love', '1234', 'ssar@nate.com', '김러브', '부산광역시 해운대구', '개성고등학교 졸업', '웹디자인 3년', '010-1234-5677', 1999);
+insert into user_tb(login_id, password, email, username, address, tel, birth) values('ssar', '1234', 'ssar@nate.com', '김쌀', '부산광역시 부산진구 부전동', '010-1234-5677', 1997);
+insert into user_tb(login_id, password, email, username, address, tel, birth) values('cos', 'qwer', 'cos@nate.com', '김코스', '서울특별시 강남구', '010-1111-2222', 1995);
+insert into user_tb(login_id, password, email, username, address, tel, birth) values('love', '1234', 'ssar@nate.com', '김러브', '부산광역시 해운대구', '010-1234-5677', 1999);
 
 -- resume_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-insert into resume_tb(title, content, user_id, open) values('내일부터 당장 일할 수 있습니다!', '안녕하십니까, 저는 동의대학교를 졸업하였고, 경력은 없으며 나이는 28세 입니다. 비록 비전공자이지만 동영상 강의로 이론을 배우고, 인터넷으로 스터디를 모집하여서 프로젝트를 통해 직접 코딩을 해볼 수 있었습니다. 저는 정말 착하고 순하며, 하라는 일은 모두 다 할수있습니다. 저를 뽑아주세요ㅎㅎ', 1, false);
-insert into resume_tb(title, content, user_id, open) values('저는 학점이 4.5인 만점자입니다!', '안녕하십니까, 저는 동의대학교 광고홍보학과를 졸업하여 광고를 제작하고 싶습니다. 이론은 물론이거와 독특한 생각들과 창의적인 아이디어로 이제껏 낸 프로젝트들이 수없이 많습니다. 제 git주소로 들어가보시면 많은 결과물을 보실 수 있을 것입니다.', 1, false);
-insert into resume_tb(title, content, user_id, open) values('저는 서울대학교 재학중인 학생입니다.', '안녕하십니까, 저는 제목으로만 말하겠습니다. 이상입니다.', 2, true);
-insert into resume_tb(title, content, user_id, open) values('경력자로 부딪히자!', '안녕하십니까, 저는 대학교를 다니진 않았지만, 실무 경험이 있는 사람입니다. 대학 졸업생들보다 3년이나 실무로 회사에서 경험한 제가 낫지 않을까요?', 3, true);
+insert into resume_tb(title, content, user_id, school, education, career, open, etc, link1) values('내일부터 당장 일할 수 있습니다!', '안녕하십니까, 저는 동의대학교를 졸업하였고, 경력은 없으며 나이는 28세 입니다. 비록 비전공자이지만 동영상 강의로 이론을 배우고, 인터넷으로 스터디를 모집하여서 프로젝트를 통해 직접 코딩을 해볼 수 있었습니다. 저는 정말 착하고 순하며, 하라는 일은 모두 다 할수있습니다. 저를 뽑아주세요ㅎㅎ', 1, '대학교 졸업','동의대학교 컴퓨터공학과', '신입', false, '기타 없음', 'http://www.naver.com');
+insert into resume_tb(title, content, user_id, school, education, career, open, etc, link1) values('저는 학점이 4.5인 만점자입니다!', '안녕하십니까, 저는 동의대학교 광고홍보학과를 졸업하여 광고를 제작하고 싶습니다. 이론은 물론이거와 독특한 생각들과 창의적인 아이디어로 이제껏 낸 프로젝트들이 수없이 많습니다. 제 git주소로 들어가보시면 많은 결과물을 보실 수 있을 것입니다.', 1, '대학교 졸업','동의대학교 광고홍보학과', '신입', false, '기타 없음', 'http://www.naver.com');
+insert into resume_tb(title, content, user_id, school, education, career, open, etc, link1) values('저는 서울대학교 재학중인 학생입니다.', '안녕하십니까, 저는 제목으로만 말하겠습니다. 이상입니다.', 2, '대학교 졸업','서울대학교 컴퓨터공학과', '신입', true, '기타 없음', 'http://www.naver.com');
+insert into resume_tb(title, content, user_id, school, education, career, open, etc, link1, link2, link3) values('경력자로 부딪히자!', '안녕하십니까, 저는 대학교를 다니진 않았지만, 실무 경험이 있는 사람입니다. 대학 졸업생들보다 3년이나 실무로 회사에서 경험한 제가 낫지 않을까요?', 3, '대학교 졸업','동의대학교 컴퓨터공학과', '신입', true, '어쨌든 일했음', '네이버블로그.com', 'github.com', '노션.com');
 
 
 -- biz_tb 더미데이터------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
