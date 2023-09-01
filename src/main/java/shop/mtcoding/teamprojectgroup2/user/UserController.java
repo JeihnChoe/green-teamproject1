@@ -22,6 +22,9 @@ public class UserController {
     @Autowired
     private HttpSession session;
 
+    @Autowired
+    private ResumeService resumeService;
+
     // 완료
     @GetMapping("/joinForm")
     public String joinForm() {
@@ -67,7 +70,7 @@ public class UserController {
     @GetMapping("/manageResumeForm")
     public String manageResumeForm(HttpServletRequest request) {
         User sessionUser = (User) session.getAttribute("sessionUser");
-        Resume resume = ResumeService.이력서목록보기(sessionUser.getId());
+        Resume resume = resumeService.이력서목록보기(sessionUser.getId());
         request.setAttribute("resume", resume);
         return "/userBoard/manageResumeForm";
     }

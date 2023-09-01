@@ -34,7 +34,7 @@ public class ResumeService {
         resumeRepository.save(resume);
     }
 
-    public static Resume 이력서목록보기(Integer id) {
+    public Resume 이력서목록보기(Integer id) {
         return resumeRepository.findById(id).get();
     }
 
